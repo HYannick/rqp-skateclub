@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: local("Oxygen"),
+  url(~assets/fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: local("Oxygen"),
+  url(~assets/fonts/Montserrat/Montserrat-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: local("Oxygen"),
+  url(~assets/fonts/Montserrat/Montserrat-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Black";
+  src: local("Oxygen"),
+  url(~assets/fonts/Montserrat/Montserrat-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WhiteOnBlack";
+  src: local("Oxygen"),
+  url(~assets/fonts/WhiteOnBlack/WhiteOnBlack.ttf) format("truetype");
+}
+
+
+$rqp-font-size-default: 62.5% !default;
+$rqp-font-size-body: 1.6rem !default;
+$rqp-default-font-family: 'Montserrat-Regular', sans-serif;
+$rqp-default-font-family-light: 'Montserrat-Light', sans-serif;
+$rqp-default-font-family-semi-bold: 'Montserrat-SemiBold', sans-serif;
+$rqp-default-font-family-bold: 'Montserrat-Bold', sans-serif;
+$rqp-default-font-family-black: 'Montserrat-Black', sans-serif;
+$rqp-default-heading-font-family: 'WhiteOnBlack', sans-serif;

@@ -1,0 +1,219 @@
+{
+  "_cts": {
+    "page": {},
+    "home-page": {
+      "introduction": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "menu": {
+      "menulinks": {
+        "label": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        }
+      },
+      "sociallinks": {}
+    }
+  },
+  "slices": {
+    "HomeSectionHighlighted": {
+      "0": {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "home_section_highlighted",
+        "items": [],
+        "primary": {
+          "titlePartOne": [
+            {
+              "type": "heading2",
+              "text": "Drive impactful interfaces",
+              "spans": []
+            }
+          ],
+          "titlePartTwo": [
+            {
+              "type": "heading2",
+              "text": "Target dot-com deliverables",
+              "spans": []
+            }
+          ],
+          "subTitle": [
+            {
+              "type": "heading3",
+              "text": "Revolutionize virtual content",
+              "spans": []
+            }
+          ],
+          "description": [
+            {
+              "type": "paragraph",
+              "text": "Qui nulla laborum mollit qui culpa consectetur fugiat. Dolore nostrud nostrud sit magna culpa est nostrud esse voluptate et eiusmod fugiat. Qui irure aute occaecat duis occaecat ut ipsum exercitation consequat occaecat.",
+              "spans": []
+            }
+          ],
+          "viewMore": {
+            "link_type": "Web",
+            "url": "https://slicemachine.dev"
+          },
+          "background": {
+            "dimensions": {
+              "width": 900,
+              "height": 500
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+          }
+        }
+      },
+      "default-slice": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "HomeSectionFeatured": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "home_section_featured",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "paragraph",
+              "text": "Anim sint ipsum deserunt exercitation anim eiusmod anim occaecat et nostrud. Nostrud ad incididunt minim qui culpa ad veniam deserunt sunt dolore velit est occaecat fugiat.",
+              "spans": []
+            }
+          ],
+          "subTitle": [
+            {
+              "type": "paragraph",
+              "text": "Et dolor ex commodo officia.",
+              "spans": []
+            }
+          ],
+          "description": [
+            {
+              "type": "paragraph",
+              "text": "Eu fugiat ex ea.",
+              "spans": []
+            }
+          ],
+          "leftImage": {
+            "dimensions": {
+              "width": 900,
+              "height": 500
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
+          },
+          "rightImage": {
+            "dimensions": {
+              "width": 900,
+              "height": 500
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+          },
+          "viewMore": {
+            "link_type": "Web",
+            "url": "http://twitter.com"
+          }
+        }
+      }
+    ],
+    "HomeHeroSlider": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "home_hero_slider",
+        "items": [
+          {
+            "slideImage": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+            }
+          },
+          {
+            "slideImage": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+            }
+          },
+          {
+            "slideImage": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+            }
+          },
+          {
+            "slideImage": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+            }
+          }
+        ],
+        "primary": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Deploy real-time bandwidth",
+              "spans": []
+            }
+          ]
+        }
+      }
+    ],
+    "SponsorsList": {
+      "default-slice": {
+        "primary": {
+          "introduction": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {
+          "sponsorLogo": {
+            "content": "https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+          }
+        }
+      }
+    }
+  }
+}

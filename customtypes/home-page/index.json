@@ -1,0 +1,46 @@
+{
+  "id": "home-page",
+  "label": "Home Page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "introduction": {
+        "config": {
+          "label": "introduction",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,preformatted"
+        },
+        "type": "StructuredText"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "home_section_highlighted": {
+              "type": "SharedSlice"
+            },
+            "home_section_featured": {
+              "type": "SharedSlice"
+            },
+            "home_hero_slider": {
+              "type": "SharedSlice"
+            },
+            "sponsors_list": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

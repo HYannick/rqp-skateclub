@@ -1,0 +1,63 @@
+
+h1, h2 {
+  font-family: $rqp-default-heading-font-family;
+  font-weight: lighter;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 6rem;
+}
+
+.title-1, .title-2, .title-3, .title-4 {
+  color: $color-text-primary-dark;
+}
+
+a {
+  font-family: $rqp-default-font-family-semi-bold;
+  color: $color-primary;
+  text-decoration: none;
+}
+
+.-colored-span {
+  span {
+    color: $color-primary;
+  }
+}
+
+.-bold-span {
+  span {
+    font-family: $rqp-default-font-family-semi-bold;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+p {
+  font-size: 20px;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+}
+.text-size-l {
+  font-size: 3rem;
+}
+
+.text-size-xxl {
+  font-size: 8rem;
+}
+.text-semi-light {
+  font-family: $rqp-default-font-family-light;
+}
+.text-semi-black {
+  font-family: $rqp-default-font-family-black;
+}
+.text-semi-bold {
+  font-family: $rqp-default-font-family-semi-bold;
+}
+.text-bold {
+  font-family: $rqp-default-font-family-bold;
+}

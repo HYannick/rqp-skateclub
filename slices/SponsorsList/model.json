@@ -1,0 +1,37 @@
+{
+  "id": "sponsors_list",
+  "type": "SharedSlice",
+  "name": "SponsorsList",
+  "description": "SponsorsList",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SponsorsList",
+      "primary": {
+        "introduction": {
+          "config": {
+            "label": "introduction",
+            "placeholder": "A nice description of everything",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+            "labels": ["span"]
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {
+        "sponsorLogo": {
+          "config": {
+            "label": "sponsorLogo",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      }
+    }
+  ]
+}

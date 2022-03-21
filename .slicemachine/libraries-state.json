@@ -1,0 +1,511 @@
+{
+  "slices": {
+    "components": {
+      "home_hero_slider": {
+        "library": "slices",
+        "id": "home_hero_slider",
+        "name": "HomeHeroSlider",
+        "description": "HomeHeroSlider",
+        "model": {
+          "id": "home_hero_slider",
+          "type": "SharedSlice",
+          "name": "HomeHeroSlider",
+          "description": "HomeHeroSlider",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HomeHeroSlider",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                }
+              },
+              "items": {
+                "slideImage": {
+                  "config": {
+                    "label": "slideImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              }
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "home_hero_slider",
+            "items": [
+              {
+                "slideImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "slideImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "slideImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "slideImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Visualize B2B networks",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/HomeHeroSlider/default-slice/preview.png",
+            "width": 800,
+            "height": 592
+          }
+        }
+      },
+      "home_section_featured": {
+        "library": "slices",
+        "id": "home_section_featured",
+        "name": "HomeSectionFeatured",
+        "description": "HomeSectionFeatured",
+        "model": {
+          "id": "home_section_featured",
+          "type": "SharedSlice",
+          "name": "HomeSectionFeatured",
+          "description": "HomeSectionFeatured",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HomeSectionFeatured",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "labels": [
+                      "span"
+                    ],
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "subTitle": {
+                  "config": {
+                    "single": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,paragraph",
+                    "allowTargetBlank": true,
+                    "placeholder": "",
+                    "label": "subTitle",
+                    "labels": [
+                      "span"
+                    ]
+                  },
+                  "type": "StructuredText"
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your product",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,hyperlink,em,strong,image,embed",
+                    "labels": [
+                      "span"
+                    ]
+                  }
+                },
+                "leftImage": {
+                  "config": {
+                    "label": "leftImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
+                "rightImage": {
+                  "config": {
+                    "label": "rightImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
+                "viewMore": {
+                  "config": {
+                    "label": "viewMore",
+                    "placeholder": "",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "home_section_featured",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Fugiat eu voluptate est elit Lorem fugiat veniam labore cillum. Laboris quis non deserunt id ad dolore proident. Deserunt tempor labore exercitation esse laborum aliqua nulla tempor aute anim et.",
+                  "spans": []
+                }
+              ],
+              "subTitle": [
+                {
+                  "type": "paragraph",
+                  "text": "Veniam enim culpa enim eiusmod Lorem consectetur dolor labore sit irure aliquip tempor mollit dolore culpa. Sit aliqua magna in exercitation adipisicing ipsum id minim eiusmod.",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Minim mollit ut ad.",
+                  "spans": []
+                }
+              ],
+              "leftImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
+              },
+              "rightImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+              },
+              "viewMore": {
+                "link_type": "Web",
+                "url": "http://google.com"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/HomeSectionFeatured/default-slice/preview.png",
+            "width": 800,
+            "height": 620
+          }
+        }
+      },
+      "home_section_highlighted": {
+        "library": "slices",
+        "id": "home_section_highlighted",
+        "name": "HomeSectionHighlighted",
+        "description": "HomeSectionHighlighted",
+        "model": {
+          "id": "home_section_highlighted",
+          "type": "SharedSlice",
+          "name": "HomeSectionHighlighted",
+          "description": "HomeSectionHighlighted",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HomeSectionHighlighted",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2,paragraph,preformatted,heading1,heading3,heading4,heading6,heading5",
+                    "labels": [
+                      "span"
+                    ]
+                  }
+                },
+                "subTitle": {
+                  "config": {
+                    "label": "subTitle",
+                    "placeholder": "A nice description of everything",
+                    "allowTargetBlank": true,
+                    "single": "heading3",
+                    "labels": [
+                      "span"
+                    ]
+                  },
+                  "type": "StructuredText"
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your product",
+                    "allowTargetBlank": true,
+                    "single": "paragraph",
+                    "labels": [
+                      "span"
+                    ]
+                  }
+                },
+                "viewMore": {
+                  "config": {
+                    "label": "viewMore",
+                    "placeholder": "View more",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                },
+                "background": {
+                  "config": {
+                    "label": "background",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "home_section_highlighted",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Ea fugiat sunt sunt labore ipsum in sint aliquip sit aliquip ex amet amet ex dolor. Non minim officia ad ex esse enim ipsum laboris id deserunt aliquip culpa adipisicing enim aliqua.",
+                  "spans": []
+                }
+              ],
+              "subTitle": [
+                {
+                  "type": "heading3",
+                  "text": "Unleash bleeding-edge interfaces",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Et culpa non nisi dolore occaecat dolore nulla nisi officia sint aute minim enim officia.",
+                  "spans": []
+                }
+              ],
+              "viewMore": {
+                "link_type": "Web",
+                "url": "https://prismic.io"
+              },
+              "background": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/HomeSectionHighlighted/default-slice/preview.png",
+            "width": 800,
+            "height": 600
+          }
+        }
+      },
+      "sponsors_list": {
+        "library": "slices",
+        "id": "sponsors_list",
+        "name": "SponsorsList",
+        "description": "SponsorsList",
+        "model": {
+          "id": "sponsors_list",
+          "type": "SharedSlice",
+          "name": "SponsorsList",
+          "description": "SponsorsList",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SponsorsList",
+              "primary": {
+                "introduction": {
+                  "config": {
+                    "label": "introduction",
+                    "placeholder": "A nice description of everything",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                    "labels": [
+                      "span"
+                    ]
+                  },
+                  "type": "StructuredText"
+                }
+              },
+              "items": {
+                "sponsorLogo": {
+                  "config": {
+                    "label": "sponsorLogo",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              }
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "sponsors_list",
+            "items": [
+              {
+                "sponsorLogo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "sponsorLogo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "sponsorLogo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+                }
+              }
+            ],
+            "primary": {
+              "introduction": [
+                {
+                  "type": "paragraph",
+                  "text": "Reprehenderit laboris non id amet elit deserunt.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/SponsorsList/default-slice/preview.png",
+            "width": 800,
+            "height": 462
+          }
+        }
+      }
+    }
+  }
+}

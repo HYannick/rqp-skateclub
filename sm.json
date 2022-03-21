@@ -1,0 +1,8 @@
+{
+  "localSliceSimulatorURL": "http://localhost:8000/slice-simulator",
+  "apiEndpoint": "https://rqp-skateclub.prismic.io/api/v2",
+  "libraries": [
+    "@/slices"
+  ],
+  "_latest": "0.1.0"
+}

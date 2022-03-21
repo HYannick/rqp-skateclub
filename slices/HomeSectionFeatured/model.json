@@ -1,0 +1,78 @@
+{
+  "id": "home_section_featured",
+  "type": "SharedSlice",
+  "name": "HomeSectionFeatured",
+  "description": "HomeSectionFeatured",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HomeSectionFeatured",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "labels": [
+              "span"
+            ],
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "subTitle": {
+          "config": {
+            "single": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,paragraph",
+            "allowTargetBlank": true,
+            "placeholder": "",
+            "label": "subTitle",
+            "labels": [
+              "span"
+            ]
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your product",
+            "allowTargetBlank": true,
+            "single": "paragraph,hyperlink,em,strong,image,embed",
+            "labels": [
+              "span"
+            ]
+          }
+        },
+        "leftImage": {
+          "config": {
+            "label": "leftImage",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "rightImage": {
+          "config": {
+            "label": "rightImage",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "viewMore": {
+          "config": {
+            "label": "viewMore",
+            "placeholder": "",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "home_hero_slider",
+  "type": "SharedSlice",
+  "name": "HomeHeroSlider",
+  "description": "HomeHeroSlider",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HomeHeroSlider",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        }
+      },
+      "items": {
+        "slideImage": {
+          "config": {
+            "label": "slideImage",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      }
+    }
+  ]
+}

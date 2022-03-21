@@ -1,0 +1,96 @@
+{
+  "id": "4e41d07c-4f9e-4177-94a4-5fb092f8b52d",
+  "uid": "molestiae-minus-consequatur",
+  "type": "menu",
+  "data": {
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Ut ullamco qui Lorem ut excepteur aliqua labore laboris anim velit velit qui sunt est pariatur. Esse nisi est cupidatat ex nostrud.",
+        "spans": []
+      }
+    ],
+    "menulinks": [
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Reprehenderit culpa eiusmod mollit labore consequat eiusmod commodo consequat.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Fugiat consectetur proident consectetur cupidatat cupidatat velit ad non pariatur ad ea aliquip nisi commodo elit. Et eiusmod sunt consectetur eu.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Reprehenderit est sit elit eiusmod enim pariatur cupidatat pariatur.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ],
+    "sociallinks": [
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "name": [
+          {
+            "type": "paragraph",
+            "text": "Aute amet non tempor. Enim ut voluptate ad eiusmod fugiat deserunt pariatur ipsum minim culpa in elit id.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "name": [
+          {
+            "type": "paragraph",
+            "text": "Irure ut dolor occaecat cillum nulla commodo exercitation laborum Lorem do deserunt sint sint irure. Qui fugiat quis eu consequat eiusmod dolore aliquip.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "name": [
+          {
+            "type": "paragraph",
+            "text": "Ipsum adipisicing labore ad anim ad occaecat cupidatat aliqua dolore tempor tempor mollit ut. Occaecat occaecat velit commodo mollit. Nostrud adipisicing excepteur minim est nulla do aute reprehenderit Lorem dolor nisi consequat.",
+            "spans": []
+          }
+        ]
+      }
+    ]
+  }
+}

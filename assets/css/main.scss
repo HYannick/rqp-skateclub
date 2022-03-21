@@ -1,0 +1,44 @@
+@import "normalize";
+@import "token/token";
+@import "quarks/quarks";
+
+:root {
+  box-sizing: border-box;
+  font-family: $rqp-default-font-family;
+  font-size: $rqp-font-size-default;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $rqp-font-size-body;
+  color: $color-text-primary-dark;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 160rem;
+  width: 100%;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+.section {
+  margin: 10rem auto 0;
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}
+
+.visuallyhidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}

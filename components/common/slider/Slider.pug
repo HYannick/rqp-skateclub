@@ -1,0 +1,9 @@
+.slider
+  h1.hero-title
+    span ROULE
+    span QUI
+    span PEUT
+  ul.slider__wrapper(:style='wrapperTransform')
+    SlideVue(v-for="slide in slides" :key="slide.index" :slide="slide" :current="current")
+  SliderControl(type="previous" title="Go to previous slide" @click="handlePreviousClick")
+  SliderControl(type="next" title="Go to next slide" @click="handleNextClick")

@@ -1,0 +1,14 @@
+.container
+  header.header
+    p(v-if="$store.state.menu === 'Please create a menu document'" class="logo") {{ $store.state.menu }}
+    nuxt-link(to="/" class="header__logo")
+      svg-icon(name='logo')
+    nav.header__main-nav
+      ul
+        li(v-for="menuLink in $store.state.menu.menulinks" :key="menuLink.id")
+          prismic-link.link.link--helike(:field="menuLink.link").text-bold.text-color-default
+            span {{ $prismic.asText(menuLink.label) }}
+    ul.header__social-networks
+      li(v-for="socialLink in $store.state.menu.sociallinks" :key="socialLink.id")
+        prismic-link(:field="socialLink.link" target="_blank")
+          svg-icon.social__logo(:name="`social/${$prismic.asText(socialLink.name)}`")

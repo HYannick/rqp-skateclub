@@ -1,0 +1,70 @@
+{
+  "id": "home_section_highlighted",
+  "type": "SharedSlice",
+  "name": "HomeSectionHighlighted",
+  "description": "HomeSectionHighlighted",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HomeSectionHighlighted",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading2,paragraph,preformatted,heading1,heading3,heading4,heading6,heading5",
+            "labels": [
+              "span"
+            ]
+          }
+        },
+        "subTitle": {
+          "config": {
+            "label": "subTitle",
+            "placeholder": "A nice description of everything",
+            "allowTargetBlank": true,
+            "single": "heading3",
+            "labels": [
+              "span"
+            ]
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your product",
+            "allowTargetBlank": true,
+            "single": "paragraph",
+            "labels": [
+              "span"
+            ]
+          }
+        },
+        "viewMore": {
+          "config": {
+            "label": "viewMore",
+            "placeholder": "View more",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "background": {
+          "config": {
+            "label": "background",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

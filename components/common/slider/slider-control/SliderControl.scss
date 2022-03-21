@@ -1,0 +1,62 @@
+
+.btn {
+  --size: 8rem;
+  --svg-width: 3rem;
+  position: absolute;
+  z-index: 9999;
+  align-items: center;
+  background-color: transparent;
+  border: 3px solid transparent;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  height: var(--size);
+  padding: 0;
+  width: var(--size);
+  box-shadow: inset 0 0 0 0.5rem;
+  transition: transform 0.2s var(--base-ease), box-shadow 0.4s var(--base-ease);
+
+  svg {
+    width: var(--svg-width);
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 1rem;
+    transform: scale(0.9);
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+
+  &--next {
+    right: -12rem;
+    bottom:  -5rem;
+  }
+
+  &--previous {
+    left: -12rem;
+    top: -5rem;
+
+    > * {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .btn {
+    --size: 10rem;
+    --svg-width: 3.5rem;
+  }
+  .btn--previous {
+    left: -15rem;
+    top: -5rem;
+  }
+  .btn--next {
+    right: -15rem;
+    bottom: -5rem;
+  }
+}

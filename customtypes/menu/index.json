@@ -1,0 +1,71 @@
+{
+  "id": "menu",
+  "label": "Menu",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "config": {
+          "label": "title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "menulinks": {
+        "config": {
+          "label": "menulinks",
+          "placeholder": "",
+          "fields": {
+            "label": {
+              "config": {
+                "label": "label",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              },
+              "type": "StructuredText"
+            },
+            "link": {
+              "config": {
+                "label": "link",
+                "placeholder": "",
+                "allowTargetBlank": false
+              },
+              "type": "Link"
+            }
+          }
+        },
+        "type": "Group"
+      },
+      "sociallinks": {
+        "config": {
+          "label": "sociallinks",
+          "placeholder": "",
+          "fields": {
+            "link": {
+              "config": {
+                "label": "link",
+                "placeholder": "",
+                "allowTargetBlank": false
+              },
+              "type": "Link"
+            },
+            "name": {
+              "config": {
+                "label": "name",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              },
+              "type": "StructuredText"
+            }
+          }
+        },
+        "type": "Group"
+      }
+    }
+  }
+}
