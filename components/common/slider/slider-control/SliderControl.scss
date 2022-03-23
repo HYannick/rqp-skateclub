@@ -46,6 +46,17 @@
   }
 }
 
+.slider.-small {
+  .btn--previous {
+    left: 15rem;
+    top: -5rem;
+  }
+  .btn--next {
+    right: 15rem;
+    bottom: -5rem;
+  }
+}
+
 @media screen and (min-width: 1366px) {
   .btn {
     --size: 10rem;

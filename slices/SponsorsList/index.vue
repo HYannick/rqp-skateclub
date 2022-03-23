@@ -3,8 +3,6 @@
     .sponsor-list
       .sponsor-image(v-for="sponsor in sponsors" :keys="sponsor.index")
         img(:src="sponsor.src" :alt="sponsor.headline")
-    .introduction.text-center
-      p.text.text-semi-light.-colored-span.-bold-span(v-html='$prismic.asHtml(slice.primary.introduction)')
 </template>
 
 <script lang="ts">
@@ -40,20 +38,6 @@ export default class SponsorsList extends Vue {
 </script>
 
 <style scoped lang="scss">
-.introduction {
-  margin: 5rem auto 15rem;
-  display: flex;
-  justify-content: center;
-  max-width: 100rem;
-  width: 100%;
-  p {
-    font-size: 2.5rem;
-  }
-  span {
-    font-weight: bold;
-    color: $color-primary;
-  }
-}
 .sponsor-list {
   display: flex;
   justify-content: center;

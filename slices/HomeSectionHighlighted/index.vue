@@ -5,7 +5,9 @@
       .content-container
         h4.title-4.text-size-l.text-bold.-colored-span(v-html='$prismic.asHtml(slice.primary.subTitle)')
         p.text-semi-light(v-text='$prismic.asText(slice.primary.description)')
-        prismic-link(:field='slice.primary.link') {{ slice.primary.viewMore }}
+        prismic-link(:field="slice.primary.viewMore" target="_blank").btn-link.link.link--helike.text-bold.text-color-default
+          span En savoir
+          span.colored-span plus
     ContentImageVue(:background-image-url='slice.primary.background.url' side='right')
 </template>
 
@@ -64,5 +66,9 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  .btn-link {
+    margin-top: 5rem;
+  }
 }
 </style>

@@ -37,6 +37,15 @@
             },
             "sponsors_list": {
               "type": "SharedSlice"
+            },
+            "introduction_text": {
+              "type": "SharedSlice"
+            },
+            "big_highlight_block": {
+              "type": "SharedSlice"
+            },
+            "bottom_carousel": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -6,6 +6,8 @@ export default function (type: any, element: any, content: string | null, childr
   switch (type) {
     case Element.paragraph:
       return `${children.join('')}`;
+    case Element.heading1:
+      return `${children.join('')}`;
     case Element.heading2:
       return `${children.join('')}`;
     case Element.heading3:

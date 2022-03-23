@@ -8,14 +8,17 @@
         img(:src='require("~/assets/svg/brushes/brush-bg-bottom-left.svg")')
     HeaderPrismicVue
     nuxt
+    FooterPrismicVue
 </template>
 
 <script>
 import {HeaderPrismicVue} from "~/components/common/header";
+import {FooterPrismicVue} from "~/components/common/footer";
 
 export default {
   components: {
-    HeaderPrismicVue
+    HeaderPrismicVue,
+    FooterPrismicVue
   },
   // Called before rendering the layout (even for error page)
   async middleware({store, $prismic}) {

@@ -1,0 +1,33 @@
+footer.footer
+  .brushes
+    img.brush.brush-primary(:src='require("~/assets/svg/brushes/brush-footer-primary.svg")')
+    img.brush.brush-black(:src='require("~/assets/svg/brushes/brush-footer-black.svg")')
+  .container
+    p(v-if="$store.state.menu === 'Please create a menu document'" class="logo") {{ $store.state.menu }}
+    .footer-content
+      .footer-section
+        ul
+          li(v-for="menuLink in $store.state.menu.menulinks.slice(0, 3)" :key="menuLink.id")
+            prismic-link.footer-link(:field="menuLink.link").text-bold.text-color-default
+              span {{ $prismic.asText(menuLink.label) }}
+        ul
+          li(v-for="menuLink in $store.state.menu.menulinks.slice(3, $store.state.menu.menulinks.length)" :key="menuLink.id")
+            prismic-link.footer-link(:field="menuLink.link").text-bold.text-color-default
+              span {{ $prismic.asText(menuLink.label) }}
+      .footer-section
+        .contact-address
+          p.text-semi-light.text-bold(v-text='$prismic.asText(footerData.contactName)')
+          p.text-semi-light(v-text='$prismic.asText(footerData.contactAddress)')
+          p.text-semi-light(v-text='$prismic.asText(footerData.contactEmail)')
+        .contact-logo
+          svg-icon(name='logo' fill='white' width="170")
+    .footer-bottom
+      div
+        button(@click='openPrivacyPolicyModal') Politique de confidentialité
+      div
+        ul.social-networks
+          li(v-for="socialLink in $store.state.menu.sociallinks" :key="socialLink.id")
+            prismic-link(:field="socialLink.link" target="_blank")
+              svg-icon.social__logo(:name="`social/${$prismic.asText(socialLink.name)}`")
+      div
+        p.copyright Copyright©{{currentYear}} Ayho. All right reserved

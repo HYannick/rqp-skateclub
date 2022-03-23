@@ -10,18 +10,7 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "SponsorsList",
-      "primary": {
-        "introduction": {
-          "config": {
-            "label": "introduction",
-            "placeholder": "A nice description of everything",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-            "labels": ["span"]
-          },
-          "type": "StructuredText"
-        }
-      },
+      "primary": {},
       "items": {
         "sponsorLogo": {
           "config": {

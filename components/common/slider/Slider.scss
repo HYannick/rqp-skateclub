@@ -4,6 +4,11 @@
   --slide-margin: 4vmin;
   --base-duration: 600ms;
   --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
+  &.-small {
+    --slide-size: 40vmin;
+    --slide-height: 30vmin;
+    position: initial;
+  }
   height: var(--slide-height);
   margin: 0 auto;
   position: relative;
@@ -42,9 +47,5 @@
 @media screen and (min-width: 1366px) {
   .slider {
     --slide-size: 138vmin;
-  }
-  .hero-title {
-    --base-title-size: 15rem;
-    --base-title-width: 60rem;
   }
 }

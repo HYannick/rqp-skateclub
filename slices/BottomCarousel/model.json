@@ -1,0 +1,63 @@
+{
+  "id": "bottom_carousel",
+  "type": "SharedSlice",
+  "name": "BottomCarousel",
+  "description": "BottomCarousel",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "BottomCarousel",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "allowTargetBlank": true,
+            "placeholder": "This is where it all begins...",
+            "label": "Title",
+            "multi": "heading1",
+            "labels": [
+              "span"
+            ]
+          }
+        }
+      },
+      "items": {
+        "picture": {
+          "config": {
+            "label": "picture",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "heading": {
+          "config": {
+            "label": "heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+            "labels": [
+              "span"
+            ]
+          },
+          "type": "StructuredText"
+        },
+        "text": {
+          "config": {
+            "label": "text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+            "labels": [
+              "span"
+            ]
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { Component, Prop, Watch } from 'nuxt-property-decorator';
 import SliderControl from '~/components/common/slider/slider-control/SliderControl.vue';
-import { Slide } from '~/components/common/Types';
+import { Slide, TextSlide } from '~/components/common/Types';
 import { SlideVue } from '~/components/common/slider/slide/index';
 
 @Component({
@@ -12,7 +12,7 @@ import { SlideVue } from '~/components/common/slider/slide/index';
 })
 export default class SlideComponent extends Vue {
   @Prop()
-  slide!: Slide;
+  slide!: Slide | TextSlide;
 
   @Prop()
   current!: number;

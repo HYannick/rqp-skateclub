@@ -1,6 +1,6 @@
 .slide {
   align-items: center;
-  color: white;
+  color: $color-white;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -100,6 +100,18 @@
           calc(var(--y) / var(--d) * 1px)
       );
     }
+  }
+}
+
+.slide__text-wrapper {
+  color: $color-text-primary-dark;
+  h5 {
+    font-family: $rqp-default-heading-font-family;
+    font-weight: lighter;
+    font-size: 2.8rem;
+  }
+  p {
+    font-size: 2.8rem;
   }
 }
 

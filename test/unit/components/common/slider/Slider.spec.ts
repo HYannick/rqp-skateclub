@@ -10,6 +10,8 @@ const createWrapper = () => {
   wrapper = shallowMount<SliderComponent>(SliderVue, {
     localVue,
     propsData: {
+      small: true,
+      current: 0,
       slides: [
         createSlide({index: 0}),
         createSlide({index: 1}),
@@ -30,31 +32,45 @@ describe('Slider Component', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 
-  it('should handle next click', () => {
+  it('should retrieve props', () => {
     expect(sliderComponent.current).toBe(0);
-    sliderComponent.handleNextClick();
-    expect(sliderComponent.current).toBe(1);
+    expect(sliderComponent.small).toBeTruthy();
   });
 
-  it('should reset current slide at the end of the slide list', () => {
-    expect(sliderComponent.current).toBe(0);
+  it('should get slide start and slide end', () => {
+    expect(sliderComponent.slideStart).toBeTruthy();
+    expect(sliderComponent.slideEnd).toBeFalsy();
+    sliderComponent.handleNextClick();
+    sliderComponent.handleNextClick();
+    expect(sliderComponent.slideStart).toBeFalsy();
+    expect(sliderComponent.slideEnd).toBeTruthy();
+  });
+
+  it('should handle next click', () => {
+    expect(sliderComponent.currentSlide).toBe(0);
+    sliderComponent.handleNextClick();
+    expect(sliderComponent.currentSlide).toBe(1);
+  });
+
+  it('should reset currentSlide slide at the end of the slide list', () => {
+    expect(sliderComponent.currentSlide).toBe(0);
     sliderComponent.handleNextClick();
     sliderComponent.handleNextClick();
     sliderComponent.handleNextClick();
-    expect(sliderComponent.current).toBe(0);
+    expect(sliderComponent.currentSlide).toBe(0);
   });
 
   it('should handle previous click', () => {
-    expect(sliderComponent.current).toBe(0);
+    expect(sliderComponent.currentSlide).toBe(0);
     sliderComponent.handleNextClick();
     sliderComponent.handleNextClick();
     sliderComponent.handlePreviousClick();
-    expect(sliderComponent.current).toBe(1);
+    expect(sliderComponent.currentSlide).toBe(1);
   });
 
   it('should go to last slide if previous button clicked at the beginning of the slide list', () => {
-    expect(sliderComponent.current).toBe(0);
+    expect(sliderComponent.currentSlide).toBe(0);
     sliderComponent.handlePreviousClick();
-    expect(sliderComponent.current).toBe(2);
+    expect(sliderComponent.currentSlide).toBe(2);
   });
 });

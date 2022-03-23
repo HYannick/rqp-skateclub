@@ -1,4 +1,7 @@
 li(ref='slide' :class='classNames' @mousemove='handleMouseMove' @mouseleave='handleMouseLeave')
-  .slide__image-wrapper
+  .slide__image-wrapper(v-if='!slide.asText')
     .slide__image-overlay
     img.slide__image(:alt='slide.headline' :src='slide.src' @load='imageLoaded')
+  .slide__text-wrapper(v-else)
+    h5 {{slide.content.heading}}
+    p {{slide.content.text}}

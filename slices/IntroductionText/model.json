@@ -1,0 +1,42 @@
+{
+  "id": "introduction_text",
+  "type": "SharedSlice",
+  "name": "IntroductionText",
+  "description": "IntroductionText",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "IntroductionText",
+      "primary": {
+        "introduction": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Introduction",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+            "labels": [
+              "span"
+            ]
+          }
+        },
+        "introductionDetails": {
+          "type": "StructuredText",
+          "config": {
+            "label": "IntroductionDetails",
+            "placeholder": "A nice description of your product",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+            "labels": [
+              "span"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

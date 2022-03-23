@@ -22,38 +22,31 @@
     }
   },
   "slices": {
-    "HomeSectionHighlighted": {
-      "0": {
+    "HomeSectionHighlighted": [
+      {
         "variation": "default-slice",
         "name": "Default slice",
         "slice_type": "home_section_highlighted",
         "items": [],
         "primary": {
-          "titlePartOne": [
+          "title": [
             {
-              "type": "heading2",
-              "text": "Drive impactful interfaces",
-              "spans": []
-            }
-          ],
-          "titlePartTwo": [
-            {
-              "type": "heading2",
-              "text": "Target dot-com deliverables",
+              "type": "paragraph",
+              "text": "Magna nisi consectetur irure. Ea nulla aliqua ex magna ullamco voluptate laboris id qui exercitation irure dolor sint.",
               "spans": []
             }
           ],
           "subTitle": [
             {
               "type": "heading3",
-              "text": "Revolutionize virtual content",
+              "text": "Transform real-time metrics",
               "spans": []
             }
           ],
           "description": [
             {
               "type": "paragraph",
-              "text": "Qui nulla laborum mollit qui culpa consectetur fugiat. Dolore nostrud nostrud sit magna culpa est nostrud esse voluptate et eiusmod fugiat. Qui irure aute occaecat duis occaecat ut ipsum exercitation consequat occaecat.",
+              "text": "Ad occaecat ea do ex amet aute est do aliqua id proident voluptate. Irure excepteur excepteur qui duis nostrud qui anim nisi dolor cillum tempor mollit esse. Deserunt cillum nisi nostrud sit culpa.",
               "spans": []
             }
           ],
@@ -68,21 +61,11 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
-          }
-        }
-      },
-      "default-slice": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
+            "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
           }
         }
       }
-    },
+    ],
     "HomeSectionFeatured": [
       {
         "variation": "default-slice",
@@ -93,21 +76,21 @@
           "title": [
             {
               "type": "paragraph",
-              "text": "Anim sint ipsum deserunt exercitation anim eiusmod anim occaecat et nostrud. Nostrud ad incididunt minim qui culpa ad veniam deserunt sunt dolore velit est occaecat fugiat.",
+              "text": "Quis laborum cillum dolor consequat sunt incididunt qui excepteur incididunt aliqua enim voluptate labore adipisicing duis.",
               "spans": []
             }
           ],
           "subTitle": [
             {
               "type": "paragraph",
-              "text": "Et dolor ex commodo officia.",
+              "text": "Excepteur pariatur laborum officia excepteur magna cillum ex adipisicing excepteur excepteur consectetur excepteur aute ullamco. Dolore dolor ea occaecat nulla deserunt ex velit duis.",
               "spans": []
             }
           ],
           "description": [
             {
               "type": "paragraph",
-              "text": "Eu fugiat ex ea.",
+              "text": "Proident ut id ad incididunt nisi elit et minim consequat Lorem. Labore cillum qui in aliqua nisi veniam.",
               "spans": []
             }
           ],
@@ -118,7 +101,7 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
+            "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
           },
           "rightImage": {
             "dimensions": {
@@ -127,11 +110,11 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+            "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
           },
           "viewMore": {
             "link_type": "Web",
-            "url": "http://twitter.com"
+            "url": "https://prismic.io"
           }
         }
       }
@@ -150,7 +133,7 @@
               },
               "alt": "Placeholder image",
               "copyright": null,
-              "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+              "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
             }
           },
           {
@@ -161,7 +144,7 @@
               },
               "alt": "Placeholder image",
               "copyright": null,
-              "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+              "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
             }
           },
           {
@@ -172,7 +155,7 @@
               },
               "alt": "Placeholder image",
               "copyright": null,
-              "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+              "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
             }
           },
           {
@@ -183,7 +166,18 @@
               },
               "alt": "Placeholder image",
               "copyright": null,
-              "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+              "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+            }
+          },
+          {
+            "slideImage": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
             }
           }
         ],
@@ -191,26 +185,149 @@
           "title": [
             {
               "type": "heading1",
-              "text": "Deploy real-time bandwidth",
+              "text": "Disintermediate turn-key networks",
               "spans": []
             }
           ]
         }
       }
     ],
-    "SponsorsList": {
+    "SponsorsList": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "sponsors_list",
+        "items": [
+          {
+            "sponsorLogo": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
+            }
+          },
+          {
+            "sponsorLogo": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+            }
+          },
+          {
+            "sponsorLogo": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+            }
+          },
+          {
+            "sponsorLogo": {
+              "dimensions": {
+                "width": 900,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+            }
+          }
+        ],
+        "primary": {}
+      }
+    ],
+    "IntroductionText": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "introduction_text",
+        "items": [],
+        "primary": {
+          "introduction": [
+            {
+              "type": "paragraph",
+              "text": "Non aliquip non Lorem tempor in eiusmod quis qui veniam.",
+              "spans": []
+            }
+          ],
+          "introductionDetails": [
+            {
+              "type": "paragraph",
+              "text": "Eu dolor deserunt dolor sunt magna culpa velit consequat officia ut.",
+              "spans": []
+            }
+          ]
+        }
+      }
+    ],
+    "BigHighlightBlock": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "big_highlight_block",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "paragraph",
+              "text": "Lorem Lorem cupidatat excepteur do consectetur. Eu occaecat qui aliqua eu pariatur excepteur incididunt magna amet dolore labore proident labore. Fugiat ex fugiat proident ut minim Lorem occaecat et minim dolor.",
+              "spans": []
+            }
+          ],
+          "description": [
+            {
+              "type": "paragraph",
+              "text": "Officia voluptate dolor cillum consequat minim aliqua Lorem voluptate nulla esse Lorem.",
+              "spans": []
+            }
+          ],
+          "featuredImage": {
+            "dimensions": {
+              "width": 900,
+              "height": 500
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+          }
+        }
+      }
+    ],
+    "BottomCarousel": {
       "default-slice": {
         "primary": {
-          "introduction": {
+          "title": {
             "config": {
-              "patternType": "PARAGRAPH",
+              "patternType": "HEADING",
               "blocks": 1
             }
           }
         },
         "items": {
-          "sponsorLogo": {
-            "content": "https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+          "picture": {
+            "content": "https://images.unsplash.com/photo-1521227889351-bf6f5b2e4e37"
+          },
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "heading": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
           }
         }
       }
