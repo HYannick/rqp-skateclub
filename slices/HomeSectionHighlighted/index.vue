@@ -5,7 +5,7 @@
       .content-container
         h4.title-4.text-size-l.text-bold.-colored-span(v-html='$prismic.asHtml(slice.primary.subTitle)')
         p.text-semi-light(v-text='$prismic.asText(slice.primary.description)')
-        prismic-link(:field="slice.primary.viewMore" target="_blank").btn-link.link.link--helike.text-bold.text-color-default
+        prismic-link(:field="slice.primary.viewMore").btn-link.link.link--helike.text-bold.text-color-default
           span En savoir
           span.colored-span plus
     ContentImageVue(:background-image-url='slice.primary.background.url' side='right')

@@ -23,6 +23,9 @@ body {
   width: 100%;
   padding: 0 3rem;
   margin: 0 auto;
+  @media screen and (max-width: 1680px) {
+    max-width: 150rem;
+  }
 }
 
 .section {
@@ -90,8 +93,6 @@ body {
     opacity: 0;
   }
 }
-
-
 
 @keyframes glitchText {
   0% {

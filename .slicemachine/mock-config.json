@@ -256,14 +256,14 @@
           "introduction": [
             {
               "type": "paragraph",
-              "text": "Non aliquip non Lorem tempor in eiusmod quis qui veniam.",
+              "text": "Consequat laborum cillum enim excepteur anim culpa amet velit minim ut. Duis et excepteur amet aliquip laborum culpa mollit fugiat. Dolor mollit velit sint magna et aliquip laboris do elit tempor incididunt do.",
               "spans": []
             }
           ],
           "introductionDetails": [
             {
               "type": "paragraph",
-              "text": "Eu dolor deserunt dolor sunt magna culpa velit consequat officia ut.",
+              "text": "Aliqua ut qui ut.",
               "spans": []
             }
           ]
@@ -331,6 +331,33 @@
           }
         }
       }
-    }
+    },
+    "PageBanner": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "page_banner",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Orchestrate visionary action-items",
+              "spans": []
+            }
+          ],
+          "picture": {
+            "dimensions": {
+              "width": 900,
+              "height": 500
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=900&h=500&fit=crop"
+          }
+        }
+      }
+    ],
+    "PersonCardBlock": {}
   }
 }

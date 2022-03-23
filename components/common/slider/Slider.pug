@@ -1,4 +1,5 @@
 .slider(:class='{"-small": small}')
+  slot
   ul.slider__wrapper(:style='wrapperTransform')
     SlideVue(v-for="slide in slides" :key="slide.index" :slide="slide" :current="currentSlide")
   SliderControl(v-show='!slideStart' type="previous" title="Go to previous slide" @click="handlePreviousClick")

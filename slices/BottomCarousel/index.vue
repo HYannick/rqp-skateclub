@@ -55,7 +55,7 @@ export default class HomeHeroSlider extends Vue {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 8rem 0 5rem;
+  margin: 8rem auto 5rem;
   h2 {
     margin: 0 10rem 10rem;
     max-width: 70rem;

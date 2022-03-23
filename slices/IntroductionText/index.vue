@@ -43,7 +43,7 @@ export default class IntroductionText extends Vue {
     p {
       max-width: 130rem;
       width: 100%;
-      font-size: 2rem;
+      font-size: 1.8rem;
       text-align: justify;
     }
   }
