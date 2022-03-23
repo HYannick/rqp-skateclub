@@ -1,10 +1,10 @@
 <template lang="pug">
   .hero
-    h1.hero-title
-      span ROULE
-      span QUI
-      span PEUT
     SliderVue(:slides="slides")
+      h1.hero-title
+        span ROULE
+        span QUI
+        span PEUT
 </template>
 
 <script lang="ts">
@@ -55,8 +55,8 @@ export default class HomeHeroSlider extends Vue {
   max-width: var(--base-title-width);
   width: 100%;
   position: absolute;
-  top: -8rem;
-  left: 8rem;
+  top: -4rem;
+  left: -8rem;
   font-size: var(--base-title-size);
   z-index: 99;
   align-items: flex-end;

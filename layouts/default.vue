@@ -52,7 +52,7 @@ export default {
       }
       &__bottom {
         position: absolute;
-        bottom: -70rem;
+        bottom: -60rem;
         left: -85rem;
       }
     }

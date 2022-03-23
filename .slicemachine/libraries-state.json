@@ -741,14 +741,14 @@
               "introduction": [
                 {
                   "type": "paragraph",
-                  "text": "Pariatur reprehenderit proident laborum consequat pariatur dolor ipsum velit. Do tempor labore magna sint officia tempor id sint. Fugiat esse tempor occaecat commodo amet voluptate eu laboris elit cupidatat.",
+                  "text": "Velit voluptate exercitation commodo duis excepteur mollit eiusmod in aute aute labore quis.",
                   "spans": []
                 }
               ],
               "introductionDetails": [
                 {
                   "type": "paragraph",
-                  "text": "Amet esse aliquip esse non qui. Id consectetur esse dolore. Aute veniam deserunt eu.",
+                  "text": "Veniam occaecat proident aute sit amet fugiat elit esse elit minim.",
                   "spans": []
                 }
               ]
@@ -764,7 +764,85 @@
           "default-slice": {
             "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/IntroductionText/default-slice/preview.png",
             "width": 800,
-            "height": 190
+            "height": 110
+          }
+        }
+      },
+      "page_banner": {
+        "library": "slices",
+        "id": "page_banner",
+        "name": "PageBanner",
+        "description": "PageBanner",
+        "model": {
+          "id": "page_banner",
+          "type": "SharedSlice",
+          "name": "PageBanner",
+          "description": "PageBanner",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "PageBanner",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "picture": {
+                  "config": {
+                    "label": "picture",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "page_banner",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Grow holistic networks",
+                  "spans": []
+                }
+              ],
+              "picture": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/PageBanner/default-slice/preview.png",
+            "width": 800,
+            "height": 700
           }
         }
       },

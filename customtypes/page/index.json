@@ -17,10 +17,10 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "home_section_featured": {
+            "introduction_text": {
               "type": "SharedSlice"
             },
-            "home_section_highlighted": {
+            "page_banner": {
               "type": "SharedSlice"
             }
           }
