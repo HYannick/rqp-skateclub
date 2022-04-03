@@ -1,7 +1,9 @@
-li(ref='slide' :class='classNames' @mousemove='handleMouseMove' @mouseleave='handleMouseLeave')
-  .slide__image-wrapper(v-if='!slide.asText')
-    .slide__image-overlay
-    img.slide__image(:alt='slide.headline' :src='slide.src' @load='imageLoaded')
-  .slide__text-wrapper(v-else)
-    h5 {{slide.content.heading}}
-    p {{slide.content.text}}
+.slide-container
+  h4.title-4.text-size-xl(v-if='slide.headline') {{slide.headline}}
+  div(ref='slide' :class='classNames' @mousemove='handleMouseMove' @mouseleave='handleMouseLeave')
+    .slide__image-wrapper(v-if='!slide.asText')
+      .slide__image-overlay
+      img.slide__image(:alt='slide.alt' :src='slide.src' @load='imageLoaded')
+    .slide__text-wrapper(v-else)
+      h5 {{slide.content.heading}}
+      p {{slide.content.text}}

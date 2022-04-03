@@ -1,3 +1,16 @@
+.slide-container {
+  width: var(--slide-size);
+  margin: 0 var(--slide-margin);
+
+  h4 {
+    font-family: $rqp-default-heading-font-family;
+    font-weight: lighter;
+    display: block;
+    margin-top: 0;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+}
 .slide {
   align-items: center;
   color: $color-white;
@@ -6,7 +19,6 @@
   flex-direction: column;
   height: var(--slide-height);
   justify-content: center;
-  margin: 0 var(--slide-margin);
   opacity: 0.5;
   position: relative;
   text-align: center;

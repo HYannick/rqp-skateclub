@@ -1,6 +1,6 @@
 <template>
   <section>
-    <slice-zone :slices="document.data.slices" />
+    {{document.data}}
   </section>
 </template>
 
@@ -9,13 +9,13 @@ import SliceZone from "vue-slicezone";
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "HomePage",
+  name: "EventPageContent",
   components: {
     SliceZone
   },
-  async asyncData({ $prismic, _, error }) {
-    const document = await $prismic.api.getByUID('home-page', 'homepage')
-
+  async asyncData({ $prismic, _, error, route }) {
+    const document = await $prismic.api.getByUID('event', route.params.uid)
+    console.log(document);
     if (document) {
       return { document }
     } else {

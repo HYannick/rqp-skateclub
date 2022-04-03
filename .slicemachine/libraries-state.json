@@ -91,7 +91,6 @@
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "vue"
         },
         "screenshotPaths": {
@@ -265,7 +264,6 @@
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "vue"
         },
         "screenshotPaths": {
@@ -302,6 +300,13 @@
                     "allowTargetBlank": true,
                     "single": "heading1"
                   }
+                },
+                "startAt": {
+                  "config": {
+                    "label": "Start At",
+                    "placeholder": ""
+                  },
+                  "type": "Number"
                 }
               },
               "items": {
@@ -312,6 +317,59 @@
                     "thumbnails": []
                   },
                   "type": "Image"
+                }
+              }
+            },
+            {
+              "id": "sliderWithTitles",
+              "name": "Slider - With Titles",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HomeHeroSlider",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "description": {
+                  "config": {
+                    "label": "description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "startAt": {
+                  "config": {
+                    "label": "Start At",
+                    "placeholder": ""
+                  },
+                  "type": "Number"
+                }
+              },
+              "items": {
+                "slideImage": {
+                  "config": {
+                    "label": "slideImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
+                "title": {
+                  "config": {
+                    "label": "title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
                 }
               }
             }
@@ -331,7 +389,7 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
                 }
               },
               {
@@ -342,7 +400,7 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
                 }
               },
               {
@@ -353,7 +411,7 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
                 }
               },
               {
@@ -364,18 +422,7 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
-                }
-              },
-              {
-                "slideImage": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
                 }
               }
             ],
@@ -383,25 +430,115 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Mesh bleeding-edge bandwidth",
+                  "text": "Deliver wireless infrastructures",
                   "spans": []
                 }
-              ]
+              ],
+              "startAt": 4719
+            }
+          },
+          "sliderWithTitles": {
+            "variation": "sliderWithTitles",
+            "name": "Slider - With Titles",
+            "slice_type": "home_hero_slider",
+            "items": [
+              {
+                "slideImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+                },
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "In Lorem non ea duis reprehenderit dolore commodo nostrud eu cillum dolor. Sint et laboris labore nulla labore sunt ea consectetur.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "slideImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+                },
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Nulla Lorem commodo laborum duis non fugiat culpa. Ipsum commodo pariatur occaecat sit ad officia. Non labore veniam nisi qui pariatur.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "slideImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+                },
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Adipisicing dolor quis laborum duis et elit. Qui ea in ullamco.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "slideImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+                },
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Esse proident excepteur velit tempor ea sunt aute magna consectetur pariatur duis do. Sint eu proident consectetur magna ad cupidatat est do velit mollit ipsum veniam nostrud.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Harness wireless convergence",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Id deserunt eiusmod ipsum qui. Adipisicing dolor nisi ea anim ex enim eiusmod in velit pariatur pariatur. Eu tempor nulla consequat.",
+                  "spans": []
+                }
+              ],
+              "startAt": 1940
             }
           }
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "vue"
         },
-        "screenshotPaths": {
-          "default-slice": {
-            "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/HomeHeroSlider/default-slice/preview.png",
-            "width": 800,
-            "height": 420
-          }
-        }
+        "screenshotPaths": {}
       },
       "home_section_featured": {
         "library": "slices",
@@ -541,7 +678,6 @@
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "vue"
         },
         "screenshotPaths": {
@@ -673,7 +809,6 @@
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "vue"
         },
         "screenshotPaths": {
@@ -741,14 +876,14 @@
               "introduction": [
                 {
                   "type": "paragraph",
-                  "text": "Velit voluptate exercitation commodo duis excepteur mollit eiusmod in aute aute labore quis.",
+                  "text": "Eu nostrud quis in ipsum tempor eiusmod anim enim aliqua eiusmod ea fugiat fugiat qui. Excepteur consectetur reprehenderit tempor fugiat Lorem irure est.",
                   "spans": []
                 }
               ],
               "introductionDetails": [
                 {
                   "type": "paragraph",
-                  "text": "Veniam occaecat proident aute sit amet fugiat elit esse elit minim.",
+                  "text": "Officia nulla voluptate ut dolore tempor Lorem Lorem Lorem mollit et sunt amet ipsum ex quis. Incididunt esse duis officia qui mollit nulla nostrud consequat consequat duis in non ex sit minim.",
                   "spans": []
                 }
               ]
@@ -757,14 +892,13 @@
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "vue"
         },
         "screenshotPaths": {
           "default-slice": {
             "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/IntroductionText/default-slice/preview.png",
             "width": 800,
-            "height": 110
+            "height": 177
           }
         }
       },
@@ -817,7 +951,7 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Grow holistic networks",
+                  "text": "Exploit wireless action-items",
                   "spans": []
                 }
               ],
@@ -828,14 +962,13 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
               }
             }
           }
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "vue"
         },
         "screenshotPaths": {
@@ -872,13 +1005,162 @@
                     "placeholder": "This is where it all begins..."
                   }
                 },
+                "presidentHeading": {
+                  "config": {
+                    "label": "president",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "secretariatHeading": {
+                  "config": {
+                    "label": "secretariat",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "cashflowHeading": {
+                  "config": {
+                    "label": "cashflow",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "itGuy": {
+                  "config": {
+                    "label": "itGuy",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                }
+              },
+              "items": {
+                "picture": {
+                  "config": {
+                    "label": "picture",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
+                "name": {
+                  "config": {
+                    "label": "name",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
                 "description": {
+                  "config": {
+                    "label": "description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "facebook": {
+                  "config": {
+                    "label": "facebook",
+                    "placeholder": "",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                },
+                "instagram": {
+                  "config": {
+                    "label": "instagram",
+                    "placeholder": "",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                },
+                "youtube": {
+                  "config": {
+                    "label": "youtube",
+                    "placeholder": "",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                }
+              }
+            },
+            {
+              "id": "asTeachersList",
+              "name": "asTeachersList",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "PersonCardBlock",
+              "primary": {
+                "title": {
                   "type": "StructuredText",
                   "config": {
-                    "single": "paragraph",
-                    "label": "Description",
-                    "placeholder": "A nice description of your product"
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
                   }
+                }
+              },
+              "items": {
+                "picture": {
+                  "config": {
+                    "label": "picture",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
+                "name": {
+                  "config": {
+                    "label": "name",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "description": {
+                  "config": {
+                    "label": "description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "facebook": {
+                  "config": {
+                    "label": "facebook",
+                    "placeholder": "",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                },
+                "instagram": {
+                  "config": {
+                    "label": "instagram",
+                    "placeholder": "",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                },
+                "youtube": {
+                  "config": {
+                    "label": "youtube",
+                    "placeholder": "",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
                 }
               }
             }
@@ -889,19 +1171,279 @@
             "variation": "default-slice",
             "name": "Default slice",
             "slice_type": "person_card_block",
-            "items": [],
+            "items": [
+              {
+                "picture": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
+                },
+                "name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Dolore ut laboris occaecat mollit excepteur eiusmod ut excepteur voluptate laborum incididunt nostrud. Quis tempor id id ad quis dolor occaecat excepteur duis adipisicing eu do enim.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Mollit consectetur exercitation commodo. Id non duis anim commodo et proident.",
+                    "spans": []
+                  }
+                ],
+                "facebook": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                },
+                "instagram": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                },
+                "youtube": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                }
+              },
+              {
+                "picture": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
+                },
+                "name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Non dolore consectetur tempor aute adipisicing excepteur cillum consectetur duis sit nulla Lorem aliquip consequat. Aliqua minim Lorem mollit mollit veniam ad duis laborum. Esse anim fugiat excepteur sunt culpa Lorem excepteur magna nostrud culpa tempor aliqua labore.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Laborum et non ullamco esse eiusmod amet tempor non aliqua nostrud consequat ea est aliqua. Voluptate sit ut aliqua occaecat eu et anim elit officia proident minim in. Id deserunt laborum voluptate tempor ut pariatur ad eiusmod pariatur voluptate mollit cupidatat dolor eiusmod.",
+                    "spans": []
+                  }
+                ],
+                "facebook": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                },
+                "instagram": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                },
+                "youtube": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                }
+              }
+            ],
             "primary": {
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Embrace transparent relationships",
+                  "text": "Mesh vertical supply-chains",
                   "spans": []
                 }
               ],
-              "description": [
+              "presidentHeading": [
                 {
                   "type": "paragraph",
-                  "text": "Labore eiusmod veniam adipisicing aute reprehenderit aliquip ex cillum et ullamco ea magna non aliquip non.",
+                  "text": "Eu laborum exercitation elit est elit aliqua voluptate consequat cupidatat. Id occaecat nulla enim deserunt ex adipisicing nisi amet culpa ipsum. In velit ea Lorem tempor.",
+                  "spans": []
+                }
+              ],
+              "secretariatHeading": [
+                {
+                  "type": "paragraph",
+                  "text": "Anim incididunt labore eiusmod sint esse pariatur excepteur nisi laboris culpa pariatur tempor do anim commodo. Deserunt do magna quis consequat mollit aliquip laboris consequat proident. Magna adipisicing tempor anim veniam tempor ex voluptate commodo amet ex do eu do amet.",
+                  "spans": []
+                }
+              ],
+              "cashflowHeading": [
+                {
+                  "type": "paragraph",
+                  "text": "Nostrud tempor enim aliquip deserunt excepteur sint. Sit minim voluptate laboris reprehenderit in laboris fugiat consectetur ipsum culpa.",
+                  "spans": []
+                }
+              ],
+              "itGuy": [
+                {
+                  "type": "paragraph",
+                  "text": "Lorem consequat cupidatat nostrud nulla labore qui in id Lorem reprehenderit est nisi pariatur ipsum laboris.",
+                  "spans": []
+                }
+              ]
+            }
+          },
+          "asTeachersList": {
+            "variation": "asTeachersList",
+            "name": "asTeachersList",
+            "slice_type": "person_card_block",
+            "items": [
+              {
+                "picture": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+                },
+                "name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Excepteur consequat do incididunt tempor irure deserunt nulla ad officia enim irure tempor irure aliqua consequat.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Nostrud do ut sunt exercitation duis eu sit elit aliquip eu tempor velit officia. Cupidatat duis ut mollit ut deserunt nulla consectetur irure.",
+                    "spans": []
+                  }
+                ],
+                "facebook": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                },
+                "instagram": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                },
+                "youtube": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                }
+              },
+              {
+                "picture": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+                },
+                "name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Non pariatur consequat duis tempor aute cupidatat eiusmod excepteur ipsum nisi qui est aliqua voluptate. Nostrud eiusmod commodo occaecat magna esse incididunt fugiat dolore labore Lorem non pariatur culpa eiusmod.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ex ea ut eu exercitation exercitation ut non labore nisi in culpa. Laboris incididunt excepteur Lorem incididunt veniam.",
+                    "spans": []
+                  }
+                ],
+                "facebook": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                },
+                "instagram": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                },
+                "youtube": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                }
+              },
+              {
+                "picture": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+                },
+                "name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Tempor aute elit officia cupidatat cillum incididunt quis cupidatat consectetur reprehenderit ex commodo. Fugiat enim cillum laboris cillum incididunt sint minim ut do esse do deserunt.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Qui pariatur eiusmod non cillum consequat consectetur proident do deserunt ad amet do ut.",
+                    "spans": []
+                  }
+                ],
+                "facebook": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                },
+                "instagram": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                },
+                "youtube": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                }
+              },
+              {
+                "picture": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+                },
+                "name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Quis mollit anim proident aute laborum ipsum mollit occaecat non ad. Duis labore aliquip id Lorem non duis eiusmod magna duis sunt esse commodo cillum nostrud cillum.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Dolor anim ut ut sint laboris id fugiat aliqua eiusmod aliquip in amet.",
+                    "spans": []
+                  }
+                ],
+                "facebook": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                },
+                "instagram": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                },
+                "youtube": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Visualize vertical functionalities",
                   "spans": []
                 }
               ]
@@ -910,14 +1452,13 @@
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "vue"
         },
         "screenshotPaths": {
-          "default-slice": {
-            "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/PersonCardBlock/default-slice/preview.png",
+          "asTeachersList": {
+            "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/PersonCardBlock/asTeachersList/preview.png",
             "width": 800,
-            "height": 214
+            "height": 2674
           }
         }
       },
@@ -986,7 +1527,6 @@
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "vue"
         },
         "screenshotPaths": {
@@ -994,6 +1534,194 @@
             "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/SponsorsList/default-slice/preview.png",
             "width": 800,
             "height": 100
+          }
+        }
+      },
+      "subscription_block": {
+        "library": "slices",
+        "id": "subscription_block",
+        "name": "SubscriptionBlock",
+        "description": "SubscriptionBlock",
+        "model": {
+          "id": "subscription_block",
+          "type": "SharedSlice",
+          "name": "SubscriptionBlock",
+          "description": "SubscriptionBlock",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SubscriptionBlock",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your product",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "link": {
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                },
+                "picture": {
+                  "config": {
+                    "label": "Picture",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "subscription_block",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Architect open-source ROI",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Amet laboris eiusmod enim fugiat tempor ut adipisicing minim aliquip qui pariatur eu. Fugiat et adipisicing laborum veniam commodo ex.",
+                  "spans": []
+                }
+              ],
+              "link": {
+                "link_type": "Web",
+                "url": "https://prismic.io"
+              },
+              "picture": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/SubscriptionBlock/default/preview.png",
+            "width": 800,
+            "height": 215
+          }
+        }
+      },
+      "title_description_block": {
+        "library": "slices",
+        "id": "title_description_block",
+        "name": "TitleDescriptionBlock",
+        "description": "TitleDescriptionBlock",
+        "model": {
+          "id": "title_description_block",
+          "type": "SharedSlice",
+          "name": "TitleDescriptionBlock",
+          "description": "TitleDescriptionBlock",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TitleDescriptionBlock",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                    "labels": [
+                      "span"
+                    ]
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your product",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                    "labels": [
+                      "span"
+                    ]
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "title_description_block",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Cupidatat ipsum consequat id.",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Amet nostrud enim Lorem incididunt in officia Lorem velit quis officia non veniam non nisi. Aute velit nulla eiusmod sint sit do id sit occaecat in consequat cillum commodo ea laborum.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "path": "/Users/ayho/Documents/projects/rqp-skateclub/.slicemachine/assets/slices/TitleDescriptionBlock/default-slice/preview.png",
+            "width": 800,
+            "height": 306
           }
         }
       }

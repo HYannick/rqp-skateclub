@@ -4,5 +4,6 @@
   "libraries": [
     "@/slices"
   ],
-  "_latest": "0.1.0"
+  "_latest": "0.3.0",
+  "framework": "previousNuxt"
 }

@@ -19,13 +19,162 @@
             "placeholder": "This is where it all begins..."
           }
         },
+        "presidentHeading": {
+          "config": {
+            "label": "president",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "secretariatHeading": {
+          "config": {
+            "label": "secretariat",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "cashflowHeading": {
+          "config": {
+            "label": "cashflow",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "itGuy": {
+          "config": {
+            "label": "itGuy",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {
+        "picture": {
+          "config": {
+            "label": "picture",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "name": {
+          "config": {
+            "label": "name",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
         "description": {
+          "config": {
+            "label": "description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "facebook": {
+          "config": {
+            "label": "facebook",
+            "placeholder": "",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "instagram": {
+          "config": {
+            "label": "instagram",
+            "placeholder": "",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "youtube": {
+          "config": {
+            "label": "youtube",
+            "placeholder": "",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      }
+    },
+    {
+      "id": "asTeachersList",
+      "name": "asTeachersList",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "PersonCardBlock",
+      "primary": {
+        "title": {
           "type": "StructuredText",
           "config": {
-            "single": "paragraph",
-            "label": "Description",
-            "placeholder": "A nice description of your product"
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
           }
+        }
+      },
+      "items": {
+        "picture": {
+          "config": {
+            "label": "picture",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "name": {
+          "config": {
+            "label": "name",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "config": {
+            "label": "description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "facebook": {
+          "config": {
+            "label": "facebook",
+            "placeholder": "",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "instagram": {
+          "config": {
+            "label": "instagram",
+            "placeholder": "",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "youtube": {
+          "config": {
+            "label": "youtube",
+            "placeholder": "",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
         }
       }
     }

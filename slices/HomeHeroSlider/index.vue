@@ -1,22 +1,25 @@
 <template lang="pug">
-  .hero
-    SliderVue(:slides="slides")
-      h1.hero-title
-        span ROULE
-        span QUI
-        span PEUT
+  .container
+    .hero
+      SliderVue(:slides="slides" :current="slice.primary.startAt || 0")
+        h1.hero-title(v-if='slice.variation === "default-slice"')
+          span ROULE
+          span QUI
+          span PEUT
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import { Component, Prop } from 'nuxt-property-decorator';
 import { SliderVue } from '~/components/common/slider';
+import { Slide } from '~/components/common/Types';
 
 export interface RestSlide {
   slideImage: {
     alt: string;
     url: string;
   }
+  title?: string;
 }
 
 @Component({
@@ -29,9 +32,11 @@ export default class HomeHeroSlider extends Vue {
   slice!: any;
 
   get slides() {
-    return this.slice.items.map((slide: RestSlide, index: number) => ({
+    return this.slice.items.map((slide: RestSlide, index: number): Slide => ({
       index,
-      headline: slide.slideImage.alt,
+      asText: false,
+      headline: this.$prismic.asText(slide.title),
+      alt: slide.slideImage.alt,
       src: slide.slideImage.url,
     }))
   }

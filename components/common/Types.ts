@@ -4,7 +4,8 @@ export interface SlideConfig {
 }
 
 export interface Slide extends SlideConfig {
-  headline: string;
+  headline?: string;
+  alt: string;
   src: string;
 }
 

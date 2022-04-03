@@ -18,7 +18,6 @@ export const actions = {
   async fetchMenu({ commit }: any, $prismic: any) {
     try {
       const menu = (await $prismic.api.getSingle('menu')).data
-
       commit('SET_MENU', menu)
     } catch (e) {
       const error = 'Please create a menu document'

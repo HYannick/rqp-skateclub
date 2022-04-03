@@ -19,6 +19,13 @@
             "allowTargetBlank": true,
             "single": "heading1"
           }
+        },
+        "startAt": {
+          "config": {
+            "label": "Start At",
+            "placeholder": ""
+          },
+          "type": "Number"
         }
       },
       "items": {
@@ -29,6 +36,59 @@
             "thumbnails": []
           },
           "type": "Image"
+        }
+      }
+    },
+    {
+      "id": "sliderWithTitles",
+      "name": "Slider - With Titles",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HomeHeroSlider",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "description": {
+          "config": {
+            "label": "description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "startAt": {
+          "config": {
+            "label": "Start At",
+            "placeholder": ""
+          },
+          "type": "Number"
+        }
+      },
+      "items": {
+        "slideImage": {
+          "config": {
+            "label": "slideImage",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "title": {
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
         }
       }
     }

@@ -9,7 +9,6 @@ export default class FooterPrismic extends Vue {
   async fetch() {
     // @ts-ignore
     this.footerData = (await this.$prismic.api.getSingle('menu')).data
-    console.log(this.footerData);
   }
 
   get currentYear() {

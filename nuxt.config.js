@@ -92,7 +92,15 @@ export default {
         {
           type: "page",
           path: "/:uid"
-        }
+        },
+        {
+          type: "events-page",
+          path: "/events"
+        },
+        {
+          type: "event",
+          path: "/events/:uid"
+        },
       ]
     },
   },

@@ -1,0 +1,47 @@
+.btn-link {
+  font-size: 3rem;
+  font-family: $rqp-default-heading-font-family;
+  color: $color-primary;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  display: block;
+  .colored-span {
+    margin-left: 0.8rem;
+    color: $color-text-primary-dark;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+  }
+
+  &:before {
+    content: '';
+    /* show by default */
+  }
+
+  &:hover {
+    &.link--helike span {
+      color: $color-primary;
+      animation: glitchText 0.4s linear;
+    }
+
+    &.link--helike:hover::before {
+      opacity: 1;
+      background: $color-primary;
+      animation: glitchLine 0.4s steps(2, start) forwards;
+    }
+  }
+
+  &.link--helike::before {
+    height: 0.3rem;
+    opacity: 0;
+  }
+}

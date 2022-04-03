@@ -22,6 +22,18 @@
             },
             "page_banner": {
               "type": "SharedSlice"
+            },
+            "person_card_block": {
+              "type": "SharedSlice"
+            },
+            "home_hero_slider": {
+              "type": "SharedSlice"
+            },
+            "title_description_block": {
+              "type": "SharedSlice"
+            },
+            "subscription_block": {
+              "type": "SharedSlice"
             }
           }
         }

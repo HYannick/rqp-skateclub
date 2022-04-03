@@ -1,5 +1,5 @@
 
-h1, h2 {
+h1, h2, h3 {
   font-family: $rqp-default-heading-font-family;
   font-weight: lighter;
   display: block;
@@ -45,6 +45,10 @@ p {
 .text-size-l {
   font-size: 3rem;
 }
+.text-size-xl {
+  font-size: 6rem;
+}
+
 
 .text-size-xxl {
   font-size: 8rem;

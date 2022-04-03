@@ -54,7 +54,7 @@
     "pug-plain-loader": "^1.1.0",
     "sass": "^1.49.9",
     "sass-loader": "^10.2.1",
-    "slice-machine-ui": "^0.2.1",
+    "slice-machine-ui": "^0.3.4",
     "ts-jest": "^27.1.1",
     "vue-jest": "^3.0.4"
   }
