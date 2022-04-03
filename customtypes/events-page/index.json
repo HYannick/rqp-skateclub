@@ -1,0 +1,34 @@
+{
+  "id": "events-page",
+  "label": "Events Page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "page_banner": {
+              "type": "SharedSlice"
+            },
+            "introduction_text": {
+              "type": "SharedSlice"
+            },
+            "title_description_block": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

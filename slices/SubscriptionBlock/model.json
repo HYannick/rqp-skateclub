@@ -1,0 +1,51 @@
+{
+  "id": "subscription_block",
+  "type": "SharedSlice",
+  "name": "SubscriptionBlock",
+  "description": "SubscriptionBlock",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SubscriptionBlock",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your product",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "link": {
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "picture": {
+          "config": {
+            "label": "Picture",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

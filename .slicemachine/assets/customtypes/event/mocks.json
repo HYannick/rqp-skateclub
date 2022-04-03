@@ -1,0 +1,35 @@
+{
+  "id": "36cadc3e-e26b-42b9-93af-95f4038e67a3",
+  "uid": "dolor-provident-odit",
+  "type": "event",
+  "data": {
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Nulla duis dolor laboris in sit aute officia qui enim qui eu ut occaecat.",
+        "spans": []
+      }
+    ],
+    "shortDesc": [
+      {
+        "type": "paragraph",
+        "text": "Et pariatur veniam cupidatat tempor do consequat mollit reprehenderit ipsum laborum dolor eiusmod do irure duis.",
+        "spans": []
+      }
+    ],
+    "thumbnail": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+    },
+    "date": "2019-09-18",
+    "link": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    }
+  }
+}
