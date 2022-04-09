@@ -1,7 +1,6 @@
-<template>
-  <section>
-    <slice-zone :slices="document.data.slices" />
-  </section>
+<template lang="pug">
+  section
+    slice-zone(:slices="document.data.slices")
 </template>
 
 <script>

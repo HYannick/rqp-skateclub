@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "paragraph_block",
+    "items": [],
+    "primary": {
+      "text": [
+        {
+          "type": "paragraph",
+          "text": "Pariatur qui ea occaecat ex anim enim pariatur voluptate.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

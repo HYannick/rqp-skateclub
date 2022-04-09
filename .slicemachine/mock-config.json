@@ -21,7 +21,21 @@
       "sociallinks": {}
     },
     "events-page": {},
-    "event": {}
+    "event": {},
+    "contact-page": {
+      "address": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "addressTitle": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   },
   "slices": {
     "HomeSectionHighlighted": [
@@ -249,8 +263,8 @@
         }
       }
     ],
-    "SponsorsList": [
-      {
+    "SponsorsList": {
+      "0": {
         "variation": "default-slice",
         "name": "Default slice",
         "slice_type": "sponsors_list",
@@ -301,8 +315,11 @@
           }
         ],
         "primary": {}
+      },
+      "default-slice": {
+        "primary": {}
       }
-    ],
+    },
     "IntroductionText": [
       {
         "variation": "default-slice",
@@ -736,8 +753,8 @@
         }
       }
     ],
-    "TitleDescriptionBlock": [
-      {
+    "TitleDescriptionBlock": {
+      "0": {
         "variation": "default-slice",
         "name": "Default slice",
         "slice_type": "title_description_block",
@@ -758,8 +775,18 @@
             }
           ]
         }
+      },
+      "default-slice": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
-    ],
+    },
     "SubscriptionBlock": {
       "default": {
         "primary": {
@@ -770,6 +797,36 @@
             }
           }
         }
+      }
+    },
+    "ParagraphBlock": {
+      "default": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "EventHeroBlock": {},
+    "ImageTextBlock": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "VideoBlock": {
+      "default": {
+        "primary": {}
       }
     }
   }

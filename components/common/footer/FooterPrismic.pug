@@ -16,7 +16,7 @@ footer.footer
               span {{ $prismic.asText(menuLink.label) }}
       .footer-section
         .contact-address
-          p.text-semi-light.text-bold(v-text='$prismic.asText(footerData.contactName)')
+          p.text-bold(v-text='$prismic.asText(footerData.contactName)')
           p.text-semi-light(v-text='$prismic.asText(footerData.contactAddress)')
           p.text-semi-light(v-text='$prismic.asText(footerData.contactEmail)')
         .contact-logo

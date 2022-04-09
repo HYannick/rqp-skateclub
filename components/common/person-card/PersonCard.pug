@@ -2,9 +2,9 @@
   .person-block__picture
     img.person-block__picture-clip(:src="person.picture.url")
   .person-block__content
-    h3.title-3.text-size-xl.-colored-span(v-html='bigTitle')
+    h3.title-3.text-size-xl.-colored-span(v-html='bigTitle' v-if="bigTitle" )
     h5.title-5.text-size-l.text-bold.-colored-span(v-html='person.information.name')
-    p.text-semi-light.-colored-span(v-html='person.information.description')
+    p.text-semi-light.-colored-span(v-html='person.information.description' v-if="showDescription" )
     .person-block__social
       prismic-link(:field="person.socials.facebook" target="_blank").social__logo
         svg-icon(name="social/facebook")

@@ -35,12 +35,19 @@ a {
 
 
 p {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  strong {
+    font-family: $rqp-default-font-family-bold;
+  }
 }
 
 .text {
   margin: 0;
   padding: 0;
+}
+.text-size-m {
+  font-size: 2.5rem;
 }
 .text-size-l {
   font-size: 3rem;
@@ -48,10 +55,11 @@ p {
 .text-size-xl {
   font-size: 6rem;
 }
-
-
 .text-size-xxl {
   font-size: 8rem;
+  @media screen and (max-width: 600px) {
+    font-size: 5rem;
+  }
 }
 .text-semi-light {
   font-family: $rqp-default-font-family-light;

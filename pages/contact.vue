@@ -1,0 +1,103 @@
+<template lang="pug">
+  .container
+    .contact
+      .contact-information
+        h1(v-text="$prismic.asText(contact.title)")
+        .contact-address
+          h4.text-bold(v-text="$prismic.asText(contact.addressTitle)")
+          p(v-html="$prismic.asHtml(contact.address)")
+          p(v-html="$prismic.asHtml(contact.email)")
+        .contact-social
+          p.text-bold(v-text="$prismic.asHtml(contact.socialTitle)")
+          ul.contact-social-links
+              li(v-for="socialLink in $store.state.menu.sociallinks" :key="socialLink.id")
+                prismic-link(:field="socialLink.link" target="_blank")
+                  svg-icon.social__logo(:name="`social/${$prismic.asText(socialLink.name)}`")
+      .contact-picture
+        img(:src="contact.picture.url")
+</template>
+
+<script>
+import Vue from "vue";
+
+export default Vue.extend({
+  name: "ContactPage",
+  async asyncData({ $prismic, _, error }) {
+    const {data: contact} = await $prismic.api.getByUID('contact-page', 'contact')
+    if (document) {
+      return { contact }
+    } else {
+      error({ statusCode: 404, message: 'Page not found' })
+    }
+  }
+})
+</script>
+
+<style lang="scss">
+.contact {
+  display: flex;
+  margin: 5rem 0 10rem;
+  &-logo {
+    margin: 3rem 0;
+  }
+  &-address {
+    margin: 3rem 0;
+    h4 {
+      font-size: 3rem;
+      color: $color-primary;
+      margin: 0 0 2rem;
+    }
+    > p {
+      margin: 0 0 1rem;
+      * {
+        margin: 0;
+      }
+      &:last-child {
+        margin-top: 2rem;
+      }
+    }
+  }
+  &-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 0.8;
+    text-align: right;
+    margin-right: 6rem;
+    h1 {
+      font-size: 8rem;
+      color: $color-primary;
+      margin: 0;
+    }
+  }
+  &-picture {
+    flex: 1;
+    height: 70rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    li {
+      list-style: none;
+      margin-left: 3rem;
+      a {
+        display: block;
+      }
+      .social__logo {
+        width: 3rem;
+        height: 3rem;
+        transition: fill 0.3s;
+        &:hover {
+          fill: $color-primary;
+        }
+      }
+    }
+  }
+}
+</style>

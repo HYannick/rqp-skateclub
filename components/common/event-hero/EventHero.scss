@@ -1,0 +1,42 @@
+.event-hero {
+  margin: 6rem 0;
+  display: flex;
+  &__date {
+    width: 10rem;
+    text-align: center;
+    align-self: flex-start;
+    transform: translateY(-3rem);
+    span {
+      display: block;
+      font-family: $rqp-default-heading-font-family;
+    }
+  }
+  &__day {
+    font-size: 8rem;
+  }
+  &__month {
+    font-size: 3rem;
+  }
+  &__content {
+    flex: 1;
+    margin-left: 4rem;
+  }
+  &__thumbnail {
+    height: 70rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  h3 {
+    font-family: $rqp-default-font-family-black;
+    font-size: 4rem;
+    margin: 0 0 1rem;
+  }
+  p {
+    margin: 5rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}

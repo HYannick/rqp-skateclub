@@ -1,3 +1,12 @@
+export interface RestSlide {
+  picture: {
+    alt: string;
+    url: string;
+  },
+  text: any;
+  heading: any;
+}
+
 export interface SlideConfig {
   asText: boolean;
   index: number;
@@ -15,3 +24,17 @@ export interface TextSlide extends SlideConfig {
     text: string;
   }
 }
+
+export interface RestSponsorImage {
+  sponsorLogo: {
+    alt: string;
+    url: string;
+  }
+}
+
+export interface SponsorImage {
+  index: number;
+  headline: string;
+  src: string;
+}
+

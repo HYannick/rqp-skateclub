@@ -1,0 +1,94 @@
+{
+  "id": "contact-page",
+  "label": "Contact Page",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "title": {
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "picture": {
+        "config": {
+          "label": "Picture",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "addressTitle": {
+        "config": {
+          "label": "Address Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "address": {
+        "config": {
+          "label": "Address",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "email": {
+        "config": {
+          "label": "Email",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "socialTitle": {
+        "config": {
+          "label": "Social Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "facebook": {
+        "config": {
+          "label": "Facebook",
+          "placeholder": "",
+          "allowTargetBlank": false
+        },
+        "type": "Link"
+      },
+      "instagram": {
+        "config": {
+          "label": "Instagram",
+          "placeholder": "",
+          "allowTargetBlank": false
+        },
+        "type": "Link"
+      },
+      "youtube": {
+        "config": {
+          "label": "Youtube",
+          "placeholder": "",
+          "allowTargetBlank": false
+        },
+        "type": "Link"
+      }
+    }
+  }
+}

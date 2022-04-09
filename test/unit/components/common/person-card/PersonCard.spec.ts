@@ -2,6 +2,7 @@ import { Wrapper, createLocalVue, shallowMount } from '@vue/test-utils';
 import { ContentImageSide } from '~/components/common/content-image/Enums';
 import { PersonCardComponent, PersonCardVue } from '~/components/common/person-card';
 import { mockPersonData } from '~/test/unit/components/common/person-card/person.fixtures';
+import { CardVariant } from '~/components/common/person-card/Enums';
 
 let wrapper: Wrapper<PersonCardComponent>;
 let personCardComponent: PersonCardComponent
@@ -13,7 +14,8 @@ const createWrapper = () => {
       person: mockPersonData(),
       side: ContentImageSide.LEFT,
       bigTitle: 'Netrunner',
-      theme: 'light'
+      theme: 'light',
+      variant: CardVariant.SIMPLE,
     },
     stubs: ['svg-icon', 'prismic-link'],
   });
@@ -66,16 +68,19 @@ describe('Person Card Component', () => {
   it('should get classes', async () => {
     expect(personCardComponent.classes).toEqual({
       '-reverse': false,
-      '-light': true
+      '-light': true,
+      '-simple': true,
     })
     wrapper.setProps({
       side: ContentImageSide.RIGHT,
-      theme: 'dark'
+      theme: 'dark',
+      variant: CardVariant.FULL,
     });
     await wrapper.vm.$nextTick();
     expect(personCardComponent.classes).toEqual({
       '-reverse': true,
-      '-light': false
+      '-light': false,
+      '-simple': false
     })
   });
 });

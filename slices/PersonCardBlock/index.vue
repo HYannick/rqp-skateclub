@@ -3,7 +3,8 @@
     .container
       h2.title-2.text-size-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
       template(v-if='slice.variation === "asTeachersList"')
-        PersonCardVue(v-for="(person, i) in persons" :person='person' :side='cardReversed(i)' :key="person.id")
+        .flex.-space-between.flex-1
+          PersonCardVue(v-for="(person, i) in persons" :person='person' :side='cardReversed(i)' :key="person.id" variant="simple")
       template(v-else)
         PersonCardVue(:person='persons[0]' :bigTitle="$prismic.asHtml(slice.primary.presidentHeading)")
         .section-with-brush

@@ -1,0 +1,28 @@
+{
+  "id": "paragraph_block",
+  "type": "SharedSlice",
+  "name": "ParagraphBlock",
+  "description": "ParagraphBlock",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ParagraphBlock",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "text",
+            "placeholder": "A nice description of your product!",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+            "labels": ["span"]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

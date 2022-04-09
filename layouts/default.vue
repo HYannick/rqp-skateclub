@@ -1,10 +1,10 @@
 <template lang="pug">
   .homepage
     .background
-      .background__hidden
+      .background__hidden(data-rellax-speed="-1" v-rellax)
         .background__top
           img(:src='require("~/assets/svg/brushes/brush-bg-top-right.svg")')
-      .background__bottom
+      .background__bottom(data-rellax-speed="-1" v-rellax)
         img(:src='require("~/assets/svg/brushes/brush-bg-bottom-left.svg")')
     HeaderPrismicVue
     nuxt
@@ -36,6 +36,9 @@ export default {
       left: 0;
       width: 100%;
       height: 100vh;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
       &__hidden {
         position: absolute;
         overflow: hidden;

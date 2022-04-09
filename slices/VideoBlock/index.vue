@@ -1,0 +1,43 @@
+<template lang="pug">
+  .container
+    .video-block
+      h4(v-text="$prismic.asText(slice.primary.title)" )
+      EmbedVideoVue(:url="slice.primary.video.embed_url")
+</template>
+
+<script>
+
+import {EmbedVideoVue} from "~/components/common/embed-video";
+export default {
+  name: "VideoBlock",
+  components: {EmbedVideoVue},
+  props: {
+    slice: {
+      type: Object,
+      required: true,
+      default() {
+        return {}
+      },
+    },
+  },
+}
+</script>
+
+<style scoped lang="scss">
+.video-block {
+  text-align: center;
+  margin: 20rem auto;
+  > div {
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 2rem;
+  }
+  h4 {
+    font-family: $rqp-default-heading-font-family;
+    font-weight: lighter;
+    font-size: 6rem;
+    margin: 0 0 4rem;
+  }
+}
+
+</style>

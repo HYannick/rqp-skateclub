@@ -1,7 +1,7 @@
 import { Component, Prop } from 'nuxt-property-decorator';
 import Vue from 'vue';
 import { PersonData } from '~/domain/Person';
-import { CardSide } from '~/components/common/person-card/Enums';
+import { CardSide, CardVariant } from '~/components/common/person-card/Enums';
 
 @Component
 export default class PersonCardComponent extends Vue {
@@ -12,6 +12,11 @@ export default class PersonCardComponent extends Vue {
     default: CardSide.LEFT
   })
   side!: CardSide;
+
+  @Prop({
+    default: CardVariant.FULL,
+  })
+  variant!: string;
 
   @Prop()
   bigTitle!: string;
@@ -25,10 +30,15 @@ export default class PersonCardComponent extends Vue {
     return {
       '-reverse': this.side === CardSide.RIGHT,
       '-light': this.theme === 'light',
+      '-simple': this.variant === CardVariant.SIMPLE
     }
   }
 
   get brushImage() {
     return `brushes/brush-content-${this.side}`;
+  }
+
+  get showDescription() {
+    return this.variant === CardVariant.FULL;
   }
 }

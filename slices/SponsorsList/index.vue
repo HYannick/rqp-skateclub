@@ -1,26 +1,16 @@
 <template lang="pug">
   .container
-    .sponsor-list
-      .sponsor-image(v-for="sponsor in sponsors" :keys="sponsor.index")
-        img(:src="sponsor.src" :alt="sponsor.headline")
+    .sponsor-list__container
+      h4(v-if='slice.primary.title.length' v-text="$prismic.asText(slice.primary.title)" )
+      .sponsor-list
+        .sponsor-image(v-for="sponsor in sponsors" :keys="sponsor.index")
+          img(:src="sponsor.src" :alt="sponsor.headline")
 </template>
 
 <script lang="ts">
 import {Component, Prop} from "nuxt-property-decorator";
 import Vue from "vue";
-
-export interface RestSponsorImage {
-  sponsorLogo: {
-    alt: string;
-    url: string;
-  }
-}
-
-export interface SponsorImage {
-  index: number;
-  headline: string;
-  src: string;
-}
+import { RestSponsorImage, SponsorImage } from '~/components/common/Types';
 
 @Component
 export default class SponsorsList extends Vue {
@@ -44,6 +34,15 @@ export default class SponsorsList extends Vue {
   align-items: flex-end;
   flex: 1;
   height: 10rem;
+  &__container {
+    h4 {
+      font-family: $rqp-default-heading-font-family;
+      font-weight: lighter;
+      font-size: 6rem;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+  }
   .sponsor-image {
     height: 100%;
     margin: 0 1rem;

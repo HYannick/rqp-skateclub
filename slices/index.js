@@ -2,40 +2,52 @@
 
 import BigHighlightBlock from './BigHighlightBlock';
 import BottomCarousel from './BottomCarousel';
+import EventHeroBlock from './EventHeroBlock';
 import HomeHeroSlider from './HomeHeroSlider';
 import HomeSectionFeatured from './HomeSectionFeatured';
 import HomeSectionHighlighted from './HomeSectionHighlighted';
+import ImageTextBlock from './ImageTextBlock';
 import IntroductionText from './IntroductionText';
 import PageBanner from './PageBanner';
+import ParagraphBlock from './ParagraphBlock';
 import PersonCardBlock from './PersonCardBlock';
 import SponsorsList from './SponsorsList';
 import SubscriptionBlock from './SubscriptionBlock';
 import TitleDescriptionBlock from './TitleDescriptionBlock';
+import VideoBlock from './VideoBlock';
 
 export {
 	BigHighlightBlock,
 	BottomCarousel,
+	EventHeroBlock,
 	HomeHeroSlider,
 	HomeSectionFeatured,
 	HomeSectionHighlighted,
+	ImageTextBlock,
 	IntroductionText,
 	PageBanner,
+	ParagraphBlock,
 	PersonCardBlock,
 	SponsorsList,
 	SubscriptionBlock,
 	TitleDescriptionBlock,
+	VideoBlock,
 };
 
 export const components = {
 	big_highlight_block: BigHighlightBlock,
 	bottom_carousel: BottomCarousel,
+	event_hero_block: EventHeroBlock,
 	home_hero_slider: HomeHeroSlider,
 	home_section_featured: HomeSectionFeatured,
 	home_section_highlighted: HomeSectionHighlighted,
+	image_text_block: ImageTextBlock,
 	introduction_text: IntroductionText,
 	page_banner: PageBanner,
+	paragraph_block: ParagraphBlock,
 	person_card_block: PersonCardBlock,
 	sponsors_list: SponsorsList,
 	subscription_block: SubscriptionBlock,
 	title_description_block: TitleDescriptionBlock,
+	video_block: VideoBlock,
 };

@@ -9,16 +9,7 @@
 import Vue from 'vue';
 import { Component, Prop } from 'nuxt-property-decorator';
 import { SliderVue } from '~/components/common/slider';
-import { Slide, TextSlide } from '~/components/common/Types';
-
-export interface RestSlide {
-  picture: {
-    alt: string;
-    url: string;
-  },
-  text: any;
-  heading: any;
-}
+import { RestSlide, Slide, TextSlide } from '~/components/common/Types';
 
 @Component({
   components: {

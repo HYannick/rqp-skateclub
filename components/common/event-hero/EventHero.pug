@@ -1,0 +1,11 @@
+.event-hero
+  .event-hero__date
+    span.event-hero__day(v-text='eventDate.day')
+    span.event-hero__month(v-text='eventDate.month')
+    span.event-hero__month(v-text='eventDate.year')
+  .event-hero__content
+    h3.title-2.text-size-xl.-colored-span(v-text="event.title")
+    .event-hero__thumbnail
+      img(:src="event.thumbnail.url" width=400)
+    .event-hero__description
+      p(v-text="event.description")

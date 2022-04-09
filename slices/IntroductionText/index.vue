@@ -25,7 +25,7 @@ export default class IntroductionText extends Vue {
 
 <style scoped lang="scss">
 .introduction {
-  margin: 5rem auto 15rem;
+  margin: 5rem auto 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,6 +40,9 @@ export default class IntroductionText extends Vue {
   }
   &-details {
     margin-top: 3rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 2rem;
     p {
       max-width: 130rem;
       width: 100%;

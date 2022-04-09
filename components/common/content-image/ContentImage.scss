@@ -14,6 +14,10 @@ $brush-width: 48.2rem;
   position: absolute;
   overflow: hidden;
 
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+
   svg {
     width: 100%;
     height: 100%;

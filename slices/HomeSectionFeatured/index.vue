@@ -1,6 +1,6 @@
 <template lang="pug">
   section.section
-    ContentImageVue(:background-image-url='slice.primary.leftImage.url' side='left' :style='{"transform": "translateY(-10rem)"}')
+    ContentImageVue(:background-image-url='slice.primary.leftImage.url' side='left')
     .content-container
       h2.title-2.text-size-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
       h4.title-4.text.text-size-l.text-bold.-colored-span(v-html='$prismic.asHtml(slice.primary.subTitle)')
@@ -8,7 +8,7 @@
       prismic-link(:field="slice.primary.viewMore").btn-link.link.link--helike.text-bold.text-color-default
         span En savoir
         span.colored-span plus
-    ContentImageVue(:background-image-url='slice.primary.rightImage.url' side='right' :style='{"transform": "translateY(10rem)"}')
+    ContentImageVue(:background-image-url='slice.primary.rightImage.url' side='right')
 </template>
 
 <script>
@@ -34,8 +34,7 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 .section {
-  margin-top: 30rem;
-  margin-bottom: 30rem;
+  margin: 30rem 0;
   display: flex;
   position: relative;
   color: $color-text-primary-dark;
@@ -43,8 +42,29 @@ export default Vue.extend({
   max-width: 192rem;
   width: 100%;
   height: 62rem;
+  @media screen and (max-width: 600px) {
+    height: 120rem;
+    margin: 10rem 0;
+  }
   > div {
     flex: 1;
+  }
+  > div:first-child {
+    transform: translateY(-10rem);
+    @media screen and (max-width: 600px) {
+      transform: translateY(0);
+      margin-bottom: 8rem;
+    }
+  }
+  > div:last-child {
+    transform: translateY(10rem);
+    @media screen and (max-width: 600px) {
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
   }
 }
 
@@ -53,17 +73,12 @@ export default Vue.extend({
   position: relative;
   transform: translateY(-5rem);
   display: flex;
+  padding: 0 4rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   .btn-link {
     margin-top: 5rem;
-  }
-  > div:first-child {
-    transform: translateY(-10rem);
-  }
-  > div:last-child {
-    transform: translateY(10rem);
   }
 }
 </style>
