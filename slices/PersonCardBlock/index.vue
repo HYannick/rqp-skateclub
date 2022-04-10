@@ -32,6 +32,8 @@ export default class PersonCardBlock extends Vue {
   @Prop()
   slice!: any;
 
+  $prismic: any;
+
   get persons(): PersonData[] {
     return this.slice.items.map((person: RestPerson, index: number): PersonData => {
       return ({

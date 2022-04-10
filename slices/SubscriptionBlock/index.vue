@@ -34,8 +34,11 @@ export default {
   &-picture {
     flex: 1;
     img {
+      -webkit-mask-image: url('~/assets/svg/brushes/sub-mask.svg');
       mask-image: url('~/assets/svg/brushes/sub-mask.svg');
+      -webkit-mask-repeat: no-repeat;
       mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
       mask-size: contain;
       max-width: 90rem;
       height: 100%;

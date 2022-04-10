@@ -31,6 +31,8 @@ export default class HomeHeroSlider extends Vue {
   @Prop()
   slice!: any;
 
+  $prismic: any;
+
   get slides() {
     return this.slice.items.map((slide: RestSlide, index: number): Slide => ({
       index,

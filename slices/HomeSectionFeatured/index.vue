@@ -34,7 +34,7 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 .section {
-  margin: 30rem 0;
+  margin: 30rem auto;
   display: flex;
   position: relative;
   color: $color-text-primary-dark;

@@ -34,6 +34,9 @@ export default class EventsPageComponent extends Vue {
 
   currentTab: EventTab = EventTab.FUTURE_EVENTS;
 
+  futureEvents: any;
+  passedEvents: any;
+
   async asyncData({ $prismic, _, error }: any) {
     const document = await $prismic.api.getByUID('events-page', 'events')
     const events: {results: {data: RestEvent}[]} = await $prismic.api.query(
