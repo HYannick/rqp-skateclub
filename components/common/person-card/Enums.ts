@@ -7,3 +7,5 @@ export enum CardVariant {
   SIMPLE = 'simple',
   FULL = 'full',
 }
+
+export default {}

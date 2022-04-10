@@ -8,7 +8,7 @@
         .event-card__tab(:class='{"-active": currentTab === 1}' @click="switchTab(1)")
           p.text-bold Passés
       .event-card__list
-        EventCard(:event="event" v-for="event in eventsList" )
+        EventCard(:event="event" v-for="event in eventsList" :key="event.title")
 </template>
 
 <script lang="ts">
@@ -34,8 +34,8 @@ export default class EventsPageComponent extends Vue {
 
   currentTab: EventTab = EventTab.FUTURE_EVENTS;
 
-  futureEvents: any;
-  passedEvents: any;
+  futureEvents: EventData[] = [];
+  passedEvents: EventData[] = [];
 
   async asyncData({ $prismic, _, error }: any) {
     const document = await $prismic.api.getByUID('events-page', 'events')

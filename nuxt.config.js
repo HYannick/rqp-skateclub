@@ -1,8 +1,3 @@
-import postcssImport from 'postcss-import';
-import postCssCustomMedia from 'postcss-custom-media';
-import mixin from 'postcss-mixins';
-import postcssPresetEnv from 'postcss-preset-env';
-import postcssNested from 'postcss-nested';
 import smConfig from "./sm.json";
 
 if (!smConfig.apiEndpoint) {
@@ -89,21 +84,13 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ["vue-slicezone", "nuxt-sm"],
-    postcss: {
-      plugins: [
-        postcssImport(),
-        postcssPresetEnv({
-          stage: 0,
-          browsers: 'cover 90%, last 2 major versions',
-        }),
-        postcssNested(),
-      ]
-    },
   },
 
   generate: {
     fallback: true
   },
+
+  pageTransition: "fade",
 
   prismic: {
     endpoint: "https://rqp-skateclub.prismic.io/api/v2",
