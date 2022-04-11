@@ -62,6 +62,9 @@ export default class PersonCardBlock extends Vue {
   .section-with-brush {
     margin: 20rem 0 50rem;
     position: relative;
+    @media screen and (max-width: 600px) {
+      margin: 10rem 0;
+    }
   }
   .bg-brush {
     width: 100%;
@@ -71,6 +74,9 @@ export default class PersonCardBlock extends Vue {
     top: 0;
     left: 0;
     z-index: -1;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
     svg {
       width: 100%;
       height: 100%;

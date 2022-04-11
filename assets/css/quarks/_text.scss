@@ -54,6 +54,9 @@ p {
 }
 .text-size-xl {
   font-size: 6rem;
+  @media screen and (max-width: 600px) {
+    font-size: 4rem;
+  }
 }
 .text-size-xxl {
   font-size: 8rem;

@@ -30,6 +30,9 @@ export default {
   &-container {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
   }
   &-picture {
     flex: 1;
@@ -42,6 +45,12 @@ export default {
       mask-size: contain;
       max-width: 90rem;
       height: 100%;
+      @media screen and (max-width: 600px) {
+        mask-image: none;
+        -webkit-mask-image: none;
+        height: 40rem;
+        margin-bottom: 4rem;
+      }
     }
   }
   &-content {

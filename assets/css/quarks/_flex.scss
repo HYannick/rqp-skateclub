@@ -1,5 +1,8 @@
 .flex {
   display: flex;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
   &.-space-between {
     justify-content: space-between;
   }

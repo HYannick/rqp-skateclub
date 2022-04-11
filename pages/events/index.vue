@@ -70,6 +70,9 @@ export default class EventsPageComponent extends Vue {
     display: flex;
     justify-content: center;
     margin: 0 auto 8rem;
+    @media screen and (max-width: 600px) {
+      justify-content: space-around;
+    }
   }
   &__tab {
     cursor: pointer;
@@ -80,6 +83,12 @@ export default class EventsPageComponent extends Vue {
     p {
       margin: 0;
       font-size: 4rem;
+    }
+    @media screen and (max-width: 600px) {
+      margin: 0;
+      p {
+        font-size: 3rem;
+      }
     }
     &.-active {
       color: $color-primary;

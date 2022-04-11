@@ -40,7 +40,6 @@ export default class IntroductionText extends Vue {
   }
   &-details {
     margin-top: 3rem;
-    padding: 2rem;
     background: white;
     border-radius: 2rem;
     p {

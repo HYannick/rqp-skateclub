@@ -28,6 +28,9 @@ export default {
   height: 70rem;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 600px) {
+    height: 40rem;
+  }
   &__overlay {
     position: absolute;
     top: 0;
@@ -52,6 +55,9 @@ export default {
     color: $color-white;
     left: 50%;
     transform: translateX(-50%);
+    @media screen and (max-width: 600px) {
+      font-size: 4rem;
+    }
   }
 }
 </style>

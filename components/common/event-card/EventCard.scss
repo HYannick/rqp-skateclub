@@ -2,11 +2,23 @@
   display: flex;
   align-items: center;
   margin-bottom: 10rem;
+  position: relative;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
   &__date {
     width: 10rem;
     text-align: center;
     align-self: flex-start;
     transform: translateY(-6rem);
+    @media screen and (max-width: 600px) {
+      position: absolute;
+      transform: translateY(0);
+      top: 1rem;
+      left: 1rem;
+      color: $color-white;
+      text-align: left;
+    }
     span {
       display: block;
       font-family: $rqp-default-heading-font-family;
@@ -14,9 +26,15 @@
   }
   &__day {
     font-size: 8rem;
+    @media screen and (max-width: 600px) {
+     font-size: 4rem;
+    }
   }
   &__month {
     font-size: 3rem;
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
   }
   &__thumbnail {
     max-width: 65rem;
