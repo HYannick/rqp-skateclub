@@ -17,6 +17,9 @@ body {
   font-size: $rqp-font-size-body;
   color: $color-text-primary-dark;
   overflow-x: hidden;
+  #__nuxt {
+    overflow-x: hidden;
+  }
 }
 
 .container {

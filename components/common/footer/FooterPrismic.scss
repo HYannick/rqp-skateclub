@@ -2,6 +2,7 @@
   background: $color-grey-dark;
   position: relative;
   margin-top: 40rem;
+
   .brushes {
     position: absolute;
     top: -30rem;
@@ -9,20 +10,26 @@
     bottom: 0;
     right: 0;
     z-index: -1;
+
     .brush {
       position: absolute;
       top: 0;
       width: 100%;
+
       &-primary {
         top: -5rem;
       }
     }
   }
+
   &-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5rem 0;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
   }
 
   &-section {
@@ -30,19 +37,34 @@
 
     &:last-child {
       align-items: center;
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        .contact-logo {
+          margin: 0;
+        }
+        .contact-address {
+          order: 1;
+          text-align: center;
+        }
+      }
     }
 
     ul {
       padding: 0;
       list-style: none;
       margin-right: 15rem;
+
       &:last-child {
         margin-right: 0;
       }
+
       li {
         margin-bottom: 2rem;
+
         a {
           color: $color-white;
+
           &:hover {
             color: $color-primary;
           }
@@ -55,13 +77,16 @@
 .contact-address {
   width: 30rem;
   text-align: right;
+
   p {
     color: $color-white;
     margin: 0;
     font-size: 1.6rem;
+
     &:first-child {
       margin-bottom: 1rem;
     }
+
     &:last-child {
       margin-top: 2rem;
     }
@@ -71,9 +96,15 @@
 .footer-bottom {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   > div {
     flex: 1;
   }
+
   button {
     background: transparent;
     padding: 0;
@@ -82,22 +113,30 @@
     color: $color-primary;
     border: none;
     cursor: pointer;
+
     &:hover {
       color: $color-white;
     }
   }
+
   .copyright {
     color: $color-primary;
     font-size: 1rem;
     text-align: right;
   }
+
   .social-networks {
     display: flex;
     align-items: center;
     justify-content: center;
+
     li {
       list-style: none;
       margin-left: 3rem;
+      @media screen and (max-width: 600px) {
+        margin-left: 0;
+        margin: 0 1.5rem;
+      }
 
       a {
         display: block;
@@ -108,6 +147,7 @@
         height: 3rem;
         transition: fill 0.3s;
         fill: $color-primary;
+
         &:hover {
           fill: $color-white;
         }

@@ -12,3 +12,24 @@
       li(v-for="socialLink in $store.state.menu.sociallinks" :key="socialLink.id")
         prismic-link(:field="socialLink.link" target="_blank")
           svg-icon.social__logo(:name="`social/${$prismic.asText(socialLink.name)}`")
+  header.header-mobile(:class='{"-open": mobileMenuOpen}')
+    .header-mobile__overlay(@click='closeMenu')
+    .header-mobile__navigation
+      button.header-mobile__close-menu(@click='closeMenu')
+        span Fermer
+      ul.header-mobile__main-nav
+        li(v-for="menuLink in $store.state.menu.menulinks" :key="menuLink.id" @click='closeMenu')
+          prismic-link.link.link--helike(:field="menuLink.link").text-bold.text-color-default
+            span {{ $prismic.asText(menuLink.label) }}
+      ul.header-mobile__social-networks
+        li(v-for="socialLink in $store.state.menu.sociallinks" :key="socialLink.id")
+          prismic-link(:field="socialLink.link" target="_blank")
+            svg-icon.social__logo(:name="`social/${$prismic.asText(socialLink.name)}`")
+    nuxt-link(to="/" class="header__logo")
+      svg-icon(name='logo')
+    .header-mobile__menu-icon(@click='openMenu')
+      p Menu
+      .burger
+        span
+        span
+        span
