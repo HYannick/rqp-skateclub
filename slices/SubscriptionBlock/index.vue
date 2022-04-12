@@ -44,6 +44,7 @@ export default {
       -webkit-mask-size: contain;
       mask-size: contain;
       max-width: 90rem;
+      width: 100%;
       height: 100%;
       @media screen and (max-width: 600px) {
         mask-image: none;

@@ -51,7 +51,7 @@ export default {
     z-index: 1;
     bottom: 2rem;
     font-family: $rqp-default-heading-font-family;
-    font-size: 9rem;
+    font-size: 8rem;
     color: $color-white;
     left: 50%;
     transform: translateX(-50%);

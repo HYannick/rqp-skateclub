@@ -39,6 +39,15 @@ export default {
       @media screen and (max-width: 600px) {
         display: none;
       }
+      @media screen and (max-width: 1366px) {
+        .background__top {
+          right: -80rem;
+        }
+        .background__bottom {
+          bottom: -80rem;
+          left: -105rem;
+        }
+      }
       &__hidden {
         position: absolute;
         overflow: hidden;
