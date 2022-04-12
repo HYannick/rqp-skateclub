@@ -33,7 +33,7 @@ export default class HomeHeroSlider extends Vue {
         asText: !slide.picture.url,
         content: {
           heading:  slide.heading.length ? slide.heading[0].text : '',
-          text:  slide.length ? slide.text[0].text : '',
+          text:  slide.text.length ? slide.text[0].text : '',
         },
       })
     })
