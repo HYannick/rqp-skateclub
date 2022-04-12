@@ -6,8 +6,8 @@
     .content
       ContentImageVue(:background-image-url='slice.primary.featuredImage.url' side='left')
       .content-container
-        h2.title-2.text-size-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
-        p.text.text-semi-light.-colored-span.-bold-span(v-html='$prismic.asHtml(slice.primary.description)')
+        h2.title-2.text-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
+        p.text-semi-light.-colored-span.-bold-span(v-html='$prismic.asHtml(slice.primary.description)')
 </template>
 
 <script>
@@ -38,7 +38,7 @@ export default {
   width: 100%;
   height: 60rem;
   margin-bottom: 50rem;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-size-sm) {
     margin-top: 10rem;
   }
   .content {
@@ -58,7 +58,7 @@ export default {
       justify-content: flex-end;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-size-sm) {
       flex-direction: column;
       text-align: center;
     }
@@ -73,7 +73,7 @@ h2 {
   z-index: 9;
   max-width: 60rem;
   width: 100%;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-size-sm) {
     position: initial;
     text-align: center;
     margin-top: 2rem;
@@ -86,7 +86,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-size-sm) {
     padding: 0;
     align-items: center;
   }
@@ -99,7 +99,7 @@ h2 {
   width: 100%;
   height: 150rem;
   z-index: -1;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-size-sm) {
     display: none;
   }
   img {

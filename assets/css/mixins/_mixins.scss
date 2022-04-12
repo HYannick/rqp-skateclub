@@ -1,0 +1,53 @@
+@mixin q-text-size {
+  &-sm {
+    font-size: $text-size-sm;
+  }
+  &-m {
+    font-size: $text-size-m;
+  }
+  &-l {
+    font-size: $text-size-l;
+    @media screen and (max-width: $screen-size-sm) {
+      font-size: $text-size-l-mobile;
+    }
+  }
+  &-xl {
+    font-size: $text-size-xl;
+    @media screen and (max-width: $screen-size-sm) {
+      font-size: $text-size-xl-mobile;
+    }
+  }
+  &-xxl {
+    font-size: $text-size-xxl;
+    @media screen and (max-width: $screen-size-sm) {
+      font-size: $text-size-xxl-mobile;
+    }
+  }
+}
+
+@mixin q-font-weight {
+  &-semi-light {
+    font-family: $rqp-default-font-family-light;
+  }
+  &-semi-bold {
+    font-family: $rqp-default-font-family-semi-bold;
+  }
+  &-bold {
+    font-family: $rqp-default-font-family-bold;
+  }
+  &-black {
+    font-family: $rqp-default-font-family-black;
+  }
+}
+
+@mixin q-text-alignment {
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+}

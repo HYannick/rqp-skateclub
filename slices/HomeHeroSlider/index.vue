@@ -76,7 +76,7 @@ export default class HomeHeroSlider extends Vue {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: $screen-size-lg) {
   .hero-title {
     --base-title-size: 15rem;
     --base-title-width: 60rem;

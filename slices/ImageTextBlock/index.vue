@@ -1,6 +1,6 @@
 <template lang="pug">
   .image-text-block
-    h4(v-text="$prismic.asHtml(slice.primary.title)" )
+    h4.text-xl(v-text="$prismic.asHtml(slice.primary.title)" )
     .image-text-block__container
       .image-text-block__picture
         img(:src="slice.primary.picture.url")
@@ -29,7 +29,6 @@ export default {
   h4 {
     font-family: $rqp-default-heading-font-family;
     font-weight: lighter;
-    font-size: 6rem;
     margin: 0 0 2rem;
   }
   &__container {

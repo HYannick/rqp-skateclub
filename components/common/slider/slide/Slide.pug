@@ -1,5 +1,5 @@
 .slide-container
-  h4.title-4.text-size-xl(v-if='slide.headline') {{slide.headline}}
+  h4.title-4.text-xl(v-if='slide.headline') {{slide.headline}}
   div(ref='slide' :class='classNames' @mousemove='handleMouseMove' @mouseleave='handleMouseLeave')
     .slide__image-wrapper(v-if='!slide.asText')
       .slide__image-overlay

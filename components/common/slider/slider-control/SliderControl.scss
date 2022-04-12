@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: $screen-size-lg) {
   .btn {
     --size: 10rem;
     --svg-width: 3.5rem;

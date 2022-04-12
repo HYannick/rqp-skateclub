@@ -1,3 +1,4 @@
+@import "mixins/mixins";
 @import "normalize";
 @import "token/token";
 @import "quarks/quarks";
@@ -27,10 +28,10 @@ body {
   width: 100%;
   padding: 0 3rem;
   margin: 0 auto;
-  @media screen and (max-width: 1680px) {
+  @media screen and (max-width: $screen-size-xl) {
     max-width: 150rem;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-size-sm) {
     padding: 0 1.5rem;
   }
 }

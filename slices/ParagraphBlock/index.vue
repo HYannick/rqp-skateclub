@@ -1,6 +1,6 @@
 <template lang="pug">
   .container(style="margin-top: 15rem; margin-bottom: 15rem;")
-    p.text-semi-light.-colored-span.-bold-span.text-size-l(v-html='$prismic.asHtml(slice.primary.text)')
+    p.text-semi-light.-colored-span.-bold-span.text-l(v-html='$prismic.asHtml(slice.primary.text)')
 </template>
 
 <script>

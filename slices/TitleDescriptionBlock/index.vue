@@ -1,6 +1,6 @@
 <template lang="pug">
   .container(style="margin-top: 15rem; margin-bottom: 15rem;")
-    h2.title-2.text-size-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
+    h2.title-2.text-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
     p.text-semi-light(v-html='$prismic.asHtml(slice.primary.description)')
 </template>
 

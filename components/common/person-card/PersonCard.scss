@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 5rem;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-size-sm) {
     flex-direction: column;
   }
   &.-simple {
@@ -11,7 +11,7 @@
     align-items: center;
     margin-bottom: 0;
     text-align: center;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-size-sm) {
       margin-bottom: 4rem;
     }
     .person-block__content {
@@ -29,7 +29,7 @@
       .person-block__social {
         justify-content: center;
       }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: $screen-size-sm) {
         transform: translateY(0);
         flex-direction: column;
       }
@@ -37,12 +37,12 @@
   }
   &.-light {
     color: $color-grey-light;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-size-sm) {
       color: $color-grey-dark;
     }
     h3 {
       color: $color-grey-light;
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: $screen-size-sm) {
         color: $color-grey-dark;
       }
     }
@@ -53,7 +53,7 @@
 
       svg {
         fill: $color-grey-light;
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: $screen-size-sm) {
           fill: $color-grey-dark;
         }
       }
@@ -65,7 +65,7 @@
     .person-block__social {
       justify-content: flex-end;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-size-sm) {
       flex-direction: column;
       text-align: left;
     }
@@ -85,7 +85,7 @@
       -webkit-mask-size: cover;
       mask-size: cover;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-size-sm) {
       max-width: 100%;
     }
   }
@@ -93,7 +93,7 @@
     padding: 4rem;
     max-width: 80rem;
     width: 100%;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-size-sm) {
       padding: 2rem 0;
     }
     h5 {

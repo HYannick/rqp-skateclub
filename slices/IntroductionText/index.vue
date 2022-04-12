@@ -1,9 +1,9 @@
 <template lang="pug">
   .container
     .introduction.text-center
-      p.text.text-semi-light.-colored-span.-bold-span(v-html='$prismic.asHtml(slice.primary.introduction)')
+      p.text-m.text-semi-light.-colored-span.-bold-span(v-html='$prismic.asHtml(slice.primary.introduction)')
       .introduction-details(v-if="hasIntroductionDetails" )
-        p.text.text-semi-light.-colored-span.-bold-span(v-html='$prismic.asHtml(slice.primary.introductionDetails)')
+        p.text-semi-light.-colored-span.-bold-span(v-html='$prismic.asHtml(slice.primary.introductionDetails)')
 </template>
 
 <script lang="ts">
@@ -32,7 +32,6 @@ export default class IntroductionText extends Vue {
   > p {
     max-width: 100rem;
     width: 100%;
-    font-size: 2.5rem;
   }
   span {
     font-weight: bold;

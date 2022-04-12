@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
     .video-block
-      h4(v-text="$prismic.asText(slice.primary.title)" )
+      h4.text-xl(v-text="$prismic.asText(slice.primary.title)" )
       EmbedVideoVue(:url="slice.primary.video.embed_url")
 </template>
 
@@ -35,7 +35,6 @@ export default {
   h4 {
     font-family: $rqp-default-heading-font-family;
     font-weight: lighter;
-    font-size: 6rem;
     margin: 0 0 4rem;
   }
 }

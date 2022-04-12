@@ -1,7 +1,7 @@
 <template lang="pug">
   section.section
     .container
-      h2.title-2.text-size-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
+      h2.title-2.text-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
       template(v-if='slice.variation === "asTeachersList"')
         .flex.-space-between.flex-1
           PersonCardVue(v-for="(person, i) in persons" :person='person' :side='cardReversed(i)' :key="person.id" variant="simple")
@@ -62,7 +62,7 @@ export default class PersonCardBlock extends Vue {
   .section-with-brush {
     margin: 20rem 0 50rem;
     position: relative;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-size-sm) {
       margin: 10rem 0;
     }
   }
@@ -74,7 +74,7 @@ export default class PersonCardBlock extends Vue {
     top: 0;
     left: 0;
     z-index: -1;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-size-sm) {
       display: none;
     }
     svg {

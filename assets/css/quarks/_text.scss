@@ -1,4 +1,3 @@
-
 h1, h2, h3 {
   font-family: $rqp-default-heading-font-family;
   font-weight: lighter;
@@ -29,14 +28,9 @@ a {
   }
 }
 
-.text-center {
-  text-align: center;
-}
-
-
 p {
-  font-size: 2rem;
-  line-height: 2.8rem;
+  font-size: $text-default-size;
+  line-height: $text-default-line-height;
   strong {
     font-family: $rqp-default-font-family-bold;
   }
@@ -45,34 +39,7 @@ p {
 .text {
   margin: 0;
   padding: 0;
-}
-.text-size-m {
-  font-size: 2.5rem;
-}
-.text-size-l {
-  font-size: 3rem;
-}
-.text-size-xl {
-  font-size: 6rem;
-  @media screen and (max-width: 600px) {
-    font-size: 4rem;
-  }
-}
-.text-size-xxl {
-  font-size: 8rem;
-  @media screen and (max-width: 600px) {
-    font-size: 5rem;
-  }
-}
-.text-semi-light {
-  font-family: $rqp-default-font-family-light;
-}
-.text-semi-black {
-  font-family: $rqp-default-font-family-black;
-}
-.text-semi-bold {
-  font-family: $rqp-default-font-family-semi-bold;
-}
-.text-bold {
-  font-family: $rqp-default-font-family-bold;
+  @include q-text-size;
+  @include q-font-weight;
+  @include q-text-alignment;
 }

@@ -3,7 +3,7 @@
     .page-banner
       .page-banner__overlay
       img(:src="slice.primary.picture.url" :alt="slice.primary.picture.alt")
-      h1(v-text="$prismic.asText(slice.primary.title)")
+      h1.text-xxl(v-text="$prismic.asText(slice.primary.title)")
 </template>
 
 <script>
@@ -28,7 +28,7 @@ export default {
   height: 70rem;
   position: relative;
   overflow: hidden;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-size-sm) {
     height: 40rem;
   }
   &__overlay {
@@ -51,13 +51,9 @@ export default {
     z-index: 1;
     bottom: 2rem;
     font-family: $rqp-default-heading-font-family;
-    font-size: 8rem;
     color: $color-white;
     left: 50%;
     transform: translateX(-50%);
-    @media screen and (max-width: 600px) {
-      font-size: 4rem;
-    }
   }
 }
 </style>

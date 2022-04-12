@@ -2,8 +2,8 @@
   section.section
     ContentImageVue(:background-image-url='slice.primary.leftImage.url' side='left')
     .content-container
-      h2.title-2.text-size-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
-      h4.title-4.text.text-size-l.text-bold.-colored-span(v-html='$prismic.asHtml(slice.primary.subTitle)')
+      h2.title-2.text-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
+      h4.title-4.text-l.text-bold.-colored-span(v-html='$prismic.asHtml(slice.primary.subTitle)')
       p.text-semi-light(v-html='$prismic.asHtml(slice.primary.description)')
       prismic-link(:field="slice.primary.viewMore").btn-link.link.link--helike.text-bold.text-color-default
         span En savoir
@@ -42,7 +42,7 @@ export default Vue.extend({
   max-width: 192rem;
   width: 100%;
   height: 62rem;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-size-sm) {
     height: 120rem;
     margin: 10rem 0;
   }
@@ -51,19 +51,19 @@ export default Vue.extend({
   }
   > div:first-child {
     transform: translateY(-10rem);
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-size-sm) {
       transform: translateY(0);
       margin-bottom: 8rem;
     }
   }
   > div:last-child {
     transform: translateY(10rem);
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-size-sm) {
       transform: translateY(0);
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-size-sm) {
     flex-direction: column;
   }
 }

@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
     .sponsor-list__container
-      h4(v-if='slice.primary.title.length' v-text="$prismic.asText(slice.primary.title)" )
+      h4.text-xl(v-if='slice.primary.title.length' v-text="$prismic.asText(slice.primary.title)" )
       .sponsor-list
         .sponsor-image(v-for="sponsor in sponsors" :keys="sponsor.index")
           img(:src="sponsor.src" :alt="sponsor.headline")
@@ -38,7 +38,6 @@ export default class SponsorsList extends Vue {
     h4 {
       font-family: $rqp-default-heading-font-family;
       font-weight: lighter;
-      font-size: 6rem;
       margin: 0 auto 2rem;
       text-align: center;
     }

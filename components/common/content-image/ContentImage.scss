@@ -14,7 +14,7 @@ $brush-width: 48.2rem;
   position: absolute;
   overflow: hidden;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $screen-size-sm) {
     display: none;
   }
 

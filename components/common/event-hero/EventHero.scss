@@ -11,12 +11,6 @@
       font-family: $rqp-default-heading-font-family;
     }
   }
-  &__day {
-    font-size: 8rem;
-  }
-  &__month {
-    font-size: 3rem;
-  }
   &__content {
     flex: 1;
     margin-left: 4rem;
@@ -31,12 +25,10 @@
   }
   h3 {
     font-family: $rqp-default-font-family-black;
-    font-size: 4rem;
     margin: 0 0 1rem;
   }
   p {
     margin: 5rem 0;
-    font-size: 2.5rem;
     text-align: center;
   }
 }

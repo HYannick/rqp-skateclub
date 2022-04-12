@@ -2,9 +2,9 @@
   .container
     .contact
       .contact-information
-        h1(v-text="$prismic.asText(contact.title)")
+        h1.text-xxl(v-text="$prismic.asText(contact.title)")
         .contact-address
-          h4.text-bold(v-text="$prismic.asText(contact.addressTitle)")
+          h4.text-l.text-bold(v-text="$prismic.asText(contact.addressTitle)")
           p(v-html="$prismic.asHtml(contact.address)")
           p(v-html="$prismic.asHtml(contact.email)")
         .contact-social
@@ -43,7 +43,6 @@ export default Vue.extend({
   &-address {
     margin: 3rem 0;
     h4 {
-      font-size: 3rem;
       color: $color-primary;
       margin: 0 0 2rem;
     }
@@ -65,7 +64,6 @@ export default Vue.extend({
     text-align: right;
     margin-right: 6rem;
     h1 {
-      font-size: 8rem;
       color: $color-primary;
       margin: 0;
     }

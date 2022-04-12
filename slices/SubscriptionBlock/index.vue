@@ -4,7 +4,7 @@
       .subscription-picture
         img(:src="slice.primary.picture.url" :alt="slice.primary.picture.alt")
       .subscription-content
-        h2.title-2.text-size-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
+        h2.title-2.text-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
         p.text-semi-light(v-html='$prismic.asHtml(slice.primary.description)')
         prismic-link(:field="slice.primary.link" target="_blank").subscription-link
           img(:src='require("~/assets/svg/hello-asso-logo.svg")')
@@ -30,7 +30,7 @@ export default {
   &-container {
     display: flex;
     align-items: center;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $screen-size-sm) {
       flex-direction: column;
     }
   }
@@ -46,7 +46,7 @@ export default {
       max-width: 90rem;
       width: 100%;
       height: 100%;
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: $screen-size-sm) {
         mask-image: none;
         -webkit-mask-image: none;
         height: 40rem;

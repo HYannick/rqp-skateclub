@@ -1,6 +1,6 @@
 <template lang="pug">
   .bottom-carousel.container
-    h2.title-2.text-size-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
+    h2.title-2.text-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
     .bottom-carousel__container
       SliderVue(:slides="slides" :small="true" :current='middleSlidePos')
 </template>
@@ -33,7 +33,7 @@ export default class HomeHeroSlider extends Vue {
         asText: !slide.picture.url,
         content: {
           heading:  slide.heading.length ? slide.heading[0].text : '',
-          text:  slide.text.length ? slide.text[0].text : '',
+          text:  slide.length ? slide.text[0].text : '',
         },
       })
     })

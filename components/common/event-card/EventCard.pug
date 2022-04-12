@@ -1,14 +1,14 @@
 .event-card
   .event-card__date
-    span.event-card__day(v-text='eventDate.day')
-    span.event-card__month(v-text='eventDate.month')
-    span.event-card__month(v-text='eventDate.year')
+    span.event-card__day.text-xl(v-text='eventDate.day')
+    span.event-card__month.text-l(v-text='eventDate.month')
+    span.event-card__month.text-l(v-text='eventDate.year')
   .event-card__thumbnail
     prismic-link(:field="event.link")
       img(:src="event.thumbnail.url" width=400)
   .event-card__content
-    h3.title-2.text-size-xl.-colored-span(v-text="event.title")
-    p(v-text="event.description")
+    h3.title-2.text-l.text-black.-colored-span(v-text="event.title")
+    p.text-sm(v-text="event.description")
     prismic-link(:field="event.link").btn-link.link.link--helike.text-bold.text-color-default
       span En savoir
       span.colored-span plus

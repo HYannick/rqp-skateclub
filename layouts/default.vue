@@ -36,10 +36,10 @@ export default {
       left: 0;
       width: 100%;
       height: 100vh;
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: $screen-size-sm) {
         display: none;
       }
-      @media screen and (max-width: 1366px) {
+      @media screen and (max-width: $screen-size-lg) {
         .background__top {
           right: -80rem;
         }

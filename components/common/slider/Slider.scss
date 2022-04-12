@@ -44,7 +44,7 @@
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: $screen-size-lg) {
   .slider {
     --slide-size: 138vmin;
   }
