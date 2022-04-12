@@ -33,25 +33,33 @@ export default {
     @media screen and (max-width: $screen-size-sm) {
       flex-direction: column;
     }
+
+    &:hover {
+      .subscription-picture {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
   }
   &-picture {
     flex: 1;
+    -webkit-mask-image: url('~/assets/svg/brushes/sub-mask.svg');
+    mask-image: url('~/assets/svg/brushes/sub-mask.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    @media screen and (max-width: $screen-size-sm) {
+      mask-image: none;
+      -webkit-mask-image: none;
+      height: 40rem;
+      margin-bottom: 4rem;
+    }
     img {
-      -webkit-mask-image: url('~/assets/svg/brushes/sub-mask.svg');
-      mask-image: url('~/assets/svg/brushes/sub-mask.svg');
-      -webkit-mask-repeat: no-repeat;
-      mask-repeat: no-repeat;
-      -webkit-mask-size: contain;
-      mask-size: contain;
-      max-width: 90rem;
       width: 100%;
       height: 100%;
-      @media screen and (max-width: $screen-size-sm) {
-        mask-image: none;
-        -webkit-mask-image: none;
-        height: 40rem;
-        margin-bottom: 4rem;
-      }
+      transition: transform 2s cubic-bezier(0.25, 1, 0.35, 1);
     }
   }
   &-content {

@@ -28,6 +28,11 @@ export default {
   height: 70rem;
   position: relative;
   overflow: hidden;
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
   @media screen and (max-width: $screen-size-sm) {
     height: 40rem;
   }
@@ -44,6 +49,7 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 4s cubic-bezier(0.25, 1, 0.35, 1);
   }
   h1 {
     position: absolute;
