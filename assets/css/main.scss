@@ -19,7 +19,9 @@ body {
   color: $color-text-primary-dark;
   overflow-x: hidden;
   #__nuxt {
-    overflow-x: hidden;
+    @media screen and (max-width: $screen-size-md) {
+      overflow-x: hidden;
+    }
   }
 }
 
@@ -44,6 +46,7 @@ body {
 .fade-leave-active {
   transition: opacity 0.5s;
 }
+
 .fade-enter,
 .fade-leave-active {
   opacity: 0;
