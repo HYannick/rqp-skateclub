@@ -15,8 +15,4 @@ export default class ContentImageComponent extends Vue {
   get brushSideClasses() {
     return this.side === ContentImageSide.LEFT ? 'brush-left' : 'brush-right';
   };
-
-  get brushImage() {
-    return `brushes/brush-content-${this.side}`;
-  }
 }

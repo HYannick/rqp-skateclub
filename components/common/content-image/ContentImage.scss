@@ -24,11 +24,10 @@ $brush-width: 48.2rem;
       -webkit-mask-image: none;
       mask-image: none;
     }
-
   }
   .brush-right {
     -webkit-mask-image: url('~/assets/svg/brushes/image-mask-right.svg');
-    mask-image: url('~/assets/svg/brushes/image-mask-left.svg');
+    mask-image: url('~/assets/svg/brushes/image-mask-right.svg');
     @media screen and (max-width: $screen-size-md) {
       -webkit-mask-image: none;
       mask-image: none;
