@@ -1,5 +1,5 @@
 <template lang="pug">
-  .video-block
+  .video-block.container
     h4.text-xl(v-text="$prismic.asText(slice.primary.title)" )
     EmbedVideoVue(:url="slice.primary.video.embed_url")
 </template>
@@ -26,7 +26,7 @@ export default {
 .video-block {
   text-align: center;
   margin: 20rem auto;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     margin: 5rem 0;
   }
   > div {
@@ -38,7 +38,7 @@ export default {
     font-family: $rqp-default-heading-font-family;
     font-weight: lighter;
     margin: 0 0 4rem;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       margin: 0 0 2rem;
     }
   }

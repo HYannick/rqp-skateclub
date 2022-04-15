@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container
+  div
     EventHeroVue(:event="currentEvent")
     slice-zone(:slices="currentEvent.slices")
 </template>

@@ -30,7 +30,7 @@ export default {
   &-container {
     display: flex;
     align-items: center;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       flex-direction: column;
     }
 
@@ -50,7 +50,7 @@ export default {
     mask-repeat: no-repeat;
     -webkit-mask-size: contain;
     mask-size: contain;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       mask-image: none;
       -webkit-mask-image: none;
       height: 40rem;

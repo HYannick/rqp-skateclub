@@ -34,7 +34,10 @@ export default class SponsorsList extends Vue {
   align-items: flex-end;
   flex: 1;
   height: 10rem;
-
+  @media screen and (max-width: $screen-size-md) {
+    height: initial;
+    flex-wrap: wrap;
+  }
   &__container {
     h4 {
       font-family: $rqp-default-heading-font-family;
@@ -50,8 +53,8 @@ export default class SponsorsList extends Vue {
     align-items: center;
     img {
       width: 15rem;
-      @media screen and (max-width: $screen-size-sm) {
-        width: 8rem;
+      @media screen and (max-width: $screen-size-md) {
+        width: 10rem;
       }
     }
   }

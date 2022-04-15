@@ -55,6 +55,31 @@
     right: 15rem;
     bottom: -5rem;
   }
+  @media screen and (max-width: $screen-size-md) {
+    .btn--previous {
+      left: 0rem;
+    }
+    .btn--next {
+      right: 0rem;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-size-md) {
+  .btn {
+    --size: 8rem;
+    --svg-width: 2.5rem;
+    background: $color-white;
+  }
+  .btn--previous {
+    left: 0rem;
+    top: initial;
+    bottom: -5rem;
+  }
+  .btn--next {
+    right: 0rem;
+    bottom: -5rem;
+  }
 }
 
 @media screen and (min-width: $screen-size-lg) {

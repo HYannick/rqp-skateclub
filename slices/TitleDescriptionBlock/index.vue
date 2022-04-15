@@ -23,10 +23,10 @@ export default {
 .title-description-block {
   margin-top: 15rem;
   margin-bottom: 15rem;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     margin-top: 5rem;
     margin-bottom: 5rem;
-    padding: 0;
+    padding: 2rem;
   }
 }
 </style>

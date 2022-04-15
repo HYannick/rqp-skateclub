@@ -1,11 +1,12 @@
 <template lang="pug">
-  .image-text-block
-    h4.text-xl(v-text="$prismic.asHtml(slice.primary.title)" )
-    .image-text-block__container
-      .image-text-block__picture
-        img(:src="slice.primary.picture.url")
-      .image-text-block__content
-        p(v-html="$prismic.asHtml(slice.primary.description)" )
+  .container
+    .image-text-block
+      h4.text-xl(v-text="$prismic.asHtml(slice.primary.title)" )
+      .image-text-block__container
+        .image-text-block__picture
+          img(:src="slice.primary.picture.url")
+        .image-text-block__content
+          p(v-html="$prismic.asHtml(slice.primary.description)" )
 </template>
 
 <script>
@@ -26,7 +27,7 @@ export default {
 <style scoped lang="scss">
 .image-text-block {
   margin-top: 20rem;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     margin: 0;
   }
   h4 {
@@ -38,7 +39,7 @@ export default {
     display: flex;
     align-items: center;
     gap: 3rem;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       flex-direction: column;
       gap: 0;
       align-items: flex-start;

@@ -38,8 +38,9 @@ export default {
   width: 100%;
   height: 60rem;
   margin-bottom: 50rem;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     margin-top: 10rem;
+    margin-bottom: 10rem;
   }
   .content {
     display: flex;
@@ -58,7 +59,7 @@ export default {
       justify-content: flex-end;
     }
 
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       flex-direction: column;
       text-align: center;
     }
@@ -73,7 +74,7 @@ h2 {
   z-index: 9;
   max-width: 60rem;
   width: 100%;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     position: initial;
     text-align: center;
     margin-top: 2rem;
@@ -86,7 +87,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     padding: 0;
     align-items: center;
   }
@@ -99,7 +100,7 @@ h2 {
   width: 100%;
   height: 150rem;
   z-index: -1;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     display: none;
   }
   img {

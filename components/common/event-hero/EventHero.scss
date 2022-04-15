@@ -11,20 +11,20 @@
       display: block;
       font-family: $rqp-default-heading-font-family;
     }
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       display: none;
     }
   }
   &__content {
     flex: 1;
     margin-left: 4rem;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       margin: 0;
     }
   }
   &__thumbnail {
     height: 70rem;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       height: 30rem;
       margin: 0rem;
     }

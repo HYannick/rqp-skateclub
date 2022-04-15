@@ -7,19 +7,19 @@
   }
   &-l {
     font-size: $text-size-l;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       font-size: $text-size-l-mobile;
     }
   }
   &-xl {
     font-size: $text-size-xl;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       font-size: $text-size-xl-mobile;
     }
   }
   &-xxl {
     font-size: $text-size-xxl;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       font-size: $text-size-xxl-mobile;
     }
   }

@@ -74,6 +74,15 @@ export default class HomeHeroSlider extends Vue {
   span:nth-child(3) {
     align-self: center;
   }
+  @media screen and (max-width: $screen-size-md) {
+    font-size: 4.5rem;
+    width: 100%;
+    top: -5.5rem;
+    left: -50%;
+    flex-direction: row;
+    transform: translateX(50%);
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: $screen-size-lg) {

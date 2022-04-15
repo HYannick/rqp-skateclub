@@ -36,7 +36,7 @@ export default {
       left: 0;
       width: 100%;
       height: 100vh;
-      @media screen and (max-width: $screen-size-sm) {
+      @media screen and (max-width: $screen-size-md) {
         display: none;
       }
       @media screen and (max-width: $screen-size-lg) {

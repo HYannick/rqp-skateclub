@@ -1,6 +1,6 @@
 .flex {
   display: flex;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     flex-direction: column;
   }
   &.-space-between {

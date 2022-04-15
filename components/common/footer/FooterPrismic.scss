@@ -2,7 +2,7 @@
   background: $color-grey-dark;
   position: relative;
   margin-top: 40rem;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     margin-top: 10rem;
   }
 
@@ -30,21 +30,21 @@
     align-items: center;
     justify-content: space-between;
     padding: 5rem 0;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       flex-direction: column;
     }
   }
 
   &-section {
     display: flex;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       width: 100%;
       justify-content: space-between;
       padding: 0 1.5rem;
     }
     &:last-child {
       align-items: center;
-      @media screen and (max-width: $screen-size-sm) {
+      @media screen and (max-width: $screen-size-md) {
         flex-direction: column;
         align-items: center;
         .contact-logo {
@@ -61,12 +61,12 @@
       padding: 0;
       list-style: none;
       margin-right: 15rem;
-      @media screen and (max-width: $screen-size-sm) {
+      @media screen and (max-width: $screen-size-md) {
         margin-right: 0;
       }
       &:last-child {
         margin-right: 0;
-        @media screen and (max-width: $screen-size-sm) {
+        @media screen and (max-width: $screen-size-md) {
           text-align: right;
         }
       }
@@ -108,7 +108,7 @@
 .footer-bottom {
   display: flex;
   align-items: center;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     flex-direction: column;
     align-items: center;
   }
@@ -145,7 +145,7 @@
     li {
       list-style: none;
       margin-left: 3rem;
-      @media screen and (max-width: $screen-size-sm) {
+      @media screen and (max-width: $screen-size-md) {
         margin-left: 0;
         margin: 0 1.5rem;
       }

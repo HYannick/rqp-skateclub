@@ -33,7 +33,7 @@ export default {
       transform: scale(1.05);
     }
   }
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     height: 40rem;
   }
   &__overlay {

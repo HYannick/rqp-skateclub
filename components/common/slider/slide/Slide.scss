@@ -1,7 +1,12 @@
 .slide-container {
   width: var(--slide-size);
   margin: 0 var(--slide-margin);
-
+  @media screen and (max-width: $screen-size-md) {
+    margin: 0;
+    h4 {
+      margin-left: 2rem;
+    }
+  }
   h4 {
     font-family: $rqp-default-heading-font-family;
     font-weight: lighter;

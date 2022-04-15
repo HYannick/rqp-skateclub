@@ -1,11 +1,12 @@
-.event-hero
-  .event-hero__date
-    span.event-hero__day.text-xl(v-text='eventDate.day')
-    span.event-hero__month.text-l(v-text='eventDate.month')
-    span.event-hero__month.text-l(v-text='eventDate.year')
-  .event-hero__content
-    h3.title-2.text-xl.-colored-span(v-text="event.title")
-    .event-hero__thumbnail
-      img(:src="event.thumbnail.url" width=400)
-    .event-hero__description
-      p.text-m(v-text="event.description")
+.container
+  .event-hero
+    .event-hero__date
+      span.event-hero__day.text-xl(v-text='eventDate.day')
+      span.event-hero__month.text-l(v-text='eventDate.month')
+      span.event-hero__month.text-l(v-text='eventDate.year')
+    .event-hero__content
+      h3.title-2.text-xl.-colored-span(v-text="event.title")
+      .event-hero__thumbnail
+        img(:src="event.thumbnail.url" width=400)
+      .event-hero__description
+        p.text-m(v-text="event.description")

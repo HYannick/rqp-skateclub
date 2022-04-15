@@ -41,14 +41,14 @@ export default {
   max-width: 150rem;
   width: 100%;
   height: 80rem;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     flex-direction: column;
   }
   > div {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       > div {
         justify-content: center;
       }
@@ -61,7 +61,7 @@ h2 {
   top: -4rem;
   left: 2rem;
   z-index: 9;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     position: initial;
   }
 }
@@ -76,7 +76,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     order: 2;
     align-items: center;
     text-align: center;

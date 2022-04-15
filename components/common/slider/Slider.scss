@@ -5,14 +5,19 @@
   --base-duration: 600ms;
   --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
   &.-small {
-    --slide-size: 40vmin;
-    --slide-height: 30vmin;
-    position: initial;
+    width: initial;
+    @media screen and (min-width: $screen-size-md) {
+      --slide-size: 40vmin;
+      --slide-height: 30vmin;
+      position: initial;
+      width: var(--slide-size);
+    }
   }
   height: var(--slide-height);
   margin: 0 auto;
   position: relative;
   width: var(--slide-size);
+
 }
 
 .slider__wrapper {

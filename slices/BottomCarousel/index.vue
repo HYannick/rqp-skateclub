@@ -51,6 +51,9 @@ export default class HomeHeroSlider extends Vue {
     margin: 0 10rem 10rem;
     max-width: 70rem;
     width: 100%;
+    @media screen and (max-width: $screen-size-md) {
+      margin: 0 0 10rem;
+    }
     span {
       display: block;
     }

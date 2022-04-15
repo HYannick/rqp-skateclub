@@ -42,7 +42,7 @@ export default Vue.extend({
   max-width: 192rem;
   width: 100%;
   height: 62rem;
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     height: 120rem;
     margin: 10rem 0;
   }
@@ -51,19 +51,19 @@ export default Vue.extend({
   }
   > div:first-child {
     transform: translateY(-10rem);
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       transform: translateY(0);
       margin-bottom: 8rem;
     }
   }
   > div:last-child {
     transform: translateY(10rem);
-    @media screen and (max-width: $screen-size-sm) {
+    @media screen and (max-width: $screen-size-md) {
       transform: translateY(0);
     }
   }
 
-  @media screen and (max-width: $screen-size-sm) {
+  @media screen and (max-width: $screen-size-md) {
     flex-direction: column;
   }
 }
