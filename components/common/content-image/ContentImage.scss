@@ -6,29 +6,32 @@ $brush-width: 48.2rem;
   background-position: center center;
   overflow: hidden;
   position: relative;
-}
-
-.brush {
-  width: $brush-width;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-
-  @media screen and (max-width: $screen-size-md) {
-    display: none;
-  }
-
-  svg {
+  img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
-
-  &-left {
-    right: -18rem;
+  .brushed {
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
   }
+  .brush-left {
+    -webkit-mask-image: url('~/assets/svg/brushes/image-mask-left.svg');
+    mask-image: url('~/assets/svg/brushes/image-mask-left.svg');
+    @media screen and (max-width: $screen-size-md) {
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
 
-  &-right {
-    left: -20rem;
-    transform: rotate(-9deg);
+  }
+  .brush-right {
+    -webkit-mask-image: url('~/assets/svg/brushes/image-mask-right.svg');
+    mask-image: url('~/assets/svg/brushes/image-mask-left.svg');
+    @media screen and (max-width: $screen-size-md) {
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
   }
 }

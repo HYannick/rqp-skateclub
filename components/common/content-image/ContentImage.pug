@@ -1,3 +1,2 @@
-.content-image.left-image(:style='{backgroundImage: `url(${backgroundImageUrl}`}')
-  .brush(:class='brushSideClasses')
-    svg-icon(:name='brushImage')
+.content-image
+  img.brushed(:src='backgroundImageUrl' :class='brushSideClasses')
