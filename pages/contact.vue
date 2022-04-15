@@ -37,6 +37,9 @@ export default Vue.extend({
 .contact {
   display: flex;
   margin: 5rem 0 10rem;
+  @media screen and (max-width: $screen-size-sm) {
+    flex-direction: column;
+  }
   &-logo {
     margin: 3rem 0;
   }
@@ -63,6 +66,11 @@ export default Vue.extend({
     flex: 0.8;
     text-align: right;
     margin-right: 6rem;
+    @media screen and (max-width: $screen-size-sm) {
+      text-align: center;
+      align-items: center;
+      margin: 0;
+    }
     h1 {
       color: $color-primary;
       margin: 0;
@@ -81,6 +89,9 @@ export default Vue.extend({
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @media screen and (max-width: $screen-size-sm) {
+      justify-content: center;
+    }
     li {
       list-style: none;
       margin-left: 3rem;

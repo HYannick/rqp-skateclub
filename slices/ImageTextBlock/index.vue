@@ -26,6 +26,9 @@ export default {
 <style scoped lang="scss">
 .image-text-block {
   margin-top: 20rem;
+  @media screen and (max-width: $screen-size-sm) {
+    margin: 0;
+  }
   h4 {
     font-family: $rqp-default-heading-font-family;
     font-weight: lighter;
@@ -35,6 +38,11 @@ export default {
     display: flex;
     align-items: center;
     gap: 3rem;
+    @media screen and (max-width: $screen-size-sm) {
+      flex-direction: column;
+      gap: 0;
+      align-items: flex-start;
+    }
   }
   &__picture {
     flex: 1;

@@ -2,6 +2,9 @@
   background: $color-grey-dark;
   position: relative;
   margin-top: 40rem;
+  @media screen and (max-width: $screen-size-sm) {
+    margin-top: 10rem;
+  }
 
   .brushes {
     position: absolute;
@@ -34,7 +37,11 @@
 
   &-section {
     display: flex;
-
+    @media screen and (max-width: $screen-size-sm) {
+      width: 100%;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+    }
     &:last-child {
       align-items: center;
       @media screen and (max-width: $screen-size-sm) {
@@ -54,9 +61,14 @@
       padding: 0;
       list-style: none;
       margin-right: 15rem;
-
+      @media screen and (max-width: $screen-size-sm) {
+        margin-right: 0;
+      }
       &:last-child {
         margin-right: 0;
+        @media screen and (max-width: $screen-size-sm) {
+          text-align: right;
+        }
       }
 
       li {
