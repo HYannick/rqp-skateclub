@@ -78,9 +78,9 @@ export default class HomeHeroSlider extends Vue {
     font-size: 4.5rem;
     width: 100%;
     top: -5.5rem;
-    left: -50%;
+    left: 50%;
     flex-direction: row;
-    transform: translateX(50%);
+    transform: translateX(-50%);
     justify-content: center;
   }
 }
