@@ -55,16 +55,6 @@ describe('Person Card Component', () => {
     expect(personCardComponent.bigTitle).toBe('Netrunner');
   });
 
-  it('should set brushImage according to side', async () => {
-    expect(personCardComponent.brushImage).toBe('brushes/brush-content-left');
-    wrapper.setProps({
-      side: ContentImageSide.RIGHT
-    });
-
-    await wrapper.vm.$nextTick();
-    expect(personCardComponent.brushImage).toBe('brushes/brush-content-right');
-  });
-
   it('should get classes', async () => {
     expect(personCardComponent.classes).toEqual({
       '-reverse': false,

@@ -34,10 +34,6 @@ export default class PersonCardComponent extends Vue {
     }
   }
 
-  get brushImage() {
-    return `brushes/brush-content-${this.side}`;
-  }
-
   get showDescription() {
     return this.variant === CardVariant.FULL;
   }

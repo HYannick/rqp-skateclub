@@ -33,16 +33,6 @@ describe('Content Image Component', () => {
     expect(contentImageComponent.side).toBe(ContentImageSide.LEFT);
   });
 
-  it('should set brushImage according to side', async() => {
-    expect(contentImageComponent.brushImage).toBe('brushes/brush-content-left');
-    wrapper.setProps({
-      side: ContentImageSide.RIGHT
-    });
-
-    await wrapper.vm.$nextTick();
-    expect(contentImageComponent.brushImage).toBe('brushes/brush-content-right');
-  });
-
   it('should get brush classes according to side', async () => {
     expect(contentImageComponent.brushSideClasses).toBe('brush-left');
     wrapper.setProps({
