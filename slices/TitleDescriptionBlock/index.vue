@@ -1,5 +1,5 @@
 <template lang="pug">
-  .title-description-block
+  .title-description-block.container
     h2.title-2.text-xxl.-colored-span(v-html='$prismic.asHtml(slice.primary.title)')
     p.text-semi-light(v-html='$prismic.asHtml(slice.primary.description)')
 </template>
