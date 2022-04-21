@@ -19,7 +19,7 @@ body {
   color: $color-text-primary-dark;
   overflow-x: hidden;
   #__nuxt {
-    @media screen and (max-width: $screen-size-md) {
+    @media screen and (max-width: $screen-size-lg) {
       overflow-x: hidden;
     }
   }
